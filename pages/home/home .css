@@ -1,0 +1,132 @@
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+/* header section */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 24px 0;
+}
+
+.heading-tech h1 {
+  font-size: 40px;
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  padding: 12px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  #header.header-scrolled {
+    padding: 15px 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero h2 {
+  color: #ff6d2d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: -1px 0 2px #ff4d00;
+}
+
+#background-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# info Section
+--------------------------------------------------------------*/
+
+.info {
+  background-color: #000;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.animate {
+  font-weight: 500;
+  margin: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+
+  text-align: left;
+  color: black;
+  font-size: 45px;
+
+  background-image: linear-gradient(
+    -225deg,
+
+    #ff9d00 0%,
+    #ff1361 50%,
+    #ff9d00 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .animate {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
