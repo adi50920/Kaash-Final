@@ -66,22 +66,29 @@
 
 .light-main {
   background-color: #2c2f32;
-  display: flex;
+  padding-right: 10%;
+  padding-left: 20%;
 }
-
-.light-main .light-main-head p {
+.light-main .sticky-text h1 {
+  font-size: 2rem;
+  font-weight: 600;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   color: #8b9199;
-  font-size: 25px;
-  margin-left: 15vw;
-  padding-bottom: 150px;
+  position: sticky;
+  top: 15%;
+}
+.light-main .sticky-text {
+  position: absolute;
+  overflow: visible;
+  height: 150%;
+  left: 6vw;
+  margin-top: 2rem;
 }
 .light-main .light-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 10vw;
   width: 100%;
 }
 .light-main .light-section .light-card {
@@ -98,9 +105,22 @@
 }
 .light-main .light-section .light-card p {
   color: #8b9199;
-  font-size: 20px;
+  font-size: 1.2rem;
+}
+.light-main .light-section .light-card h2 {
+  font-weight: 600;
+  color: #eb642c;
 }
 @media only screen and (max-width: 750px) {
+  .light-main .sticky-text h1 {
+    font-size: 1.2rem;
+  }
+  .light-main .sticky-text {
+    height: 120%;
+  }
+  .light-main {
+    padding-left: 20%;
+  }
   .light-main .light-section .light-card {
     margin: 20px;
     width: 230px;
@@ -120,12 +140,6 @@
     justify-content: space-evenly;
   }
 }
-@media only screen and (max-width: 350pxf) {
-  .light-main {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
 /* upper-footer   */
 
@@ -139,9 +153,20 @@
 .form-field textarea {
   font-size: 30px;
 }
-.upper-container-main {
+.upper-section-footer .text-start {
+  font-size: 2rem;
 }
-
+.upper-section-footer .upper-text h2 {
+  font-size: 4rem;
+}
+@media only screen and (max-width: 700px) {
+  .upper-section-footer .text-start {
+    font-size: 1.2rem;
+  }
+  .upper-section-footer .upper-text h2 {
+    font-size: 2.5rem;
+  }
+}
 /* lower-footer */
 
 .lower-container {
