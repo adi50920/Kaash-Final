@@ -1,0 +1,212 @@
+*{
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+  /* -------header section--------- */
+#header{
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+}
+
+/* --------INTRO-------- 
+
+/* Default height for small devices */
+#intro .bg-image{
+    height: 100vh;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+    #intro .bgimage{
+      height: 100vh;
+    }
+} 
+
+.bg-image h1{
+    color: #ff4d00;
+    font-size: 60px;
+    padding: 220px 300px;
+    padding-bottom: 0px;
+} 
+
+.bg-image p{
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 300px;
+    padding-bottom: 300px;
+    padding-top: 190px ;
+    padding-bottom: 0px;
+    color: #8B9199;
+}
+  
+.bg-image ul{
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 300px;
+    padding-top: 10px;
+    color: #8B9199;
+}
+
+/*------Human-centric light---------*/
+
+#centric mark,
+#centric1 mark,
+#centric2 mark,
+#centric3 mark{
+    color: #ff4d00;
+    background-color: white;
+}
+
+#centric .container{
+    position: absolute;
+    padding: 150px 50px;
+}
+
+#centric h3{
+    writing-mode: vertical-lr;
+    display: inline;
+    color: #8B9199;
+    padding: 15px;
+    transform: rotate(180deg);
+}
+
+#centric .c1{
+    font-size: 25px;
+    display: inline;
+    position: absolute;
+    padding: 30px 100px 100px 100px;
+    margin: 0;
+    text-align: justify;
+    letter-spacing: 0.6px;
+}
+
+#centric h4,
+#centric1 h4,
+#centric2 h4,
+#centric3 h4{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+#centric1 .c2{
+    font-size: 25px;
+    display: inline;
+    color: #8B9199;
+    position: relative;
+    text-align: justify;
+    letter-spacing: 0.6px;
+}
+
+
+#centric1 .container1{
+    padding: 500px 100px 50px 150px;
+}
+
+#centric2 .c3{
+    font-size: 25px;
+    position: relative;
+    display: inline;
+    margin: 0;
+    color: #8B9199;
+    padding-top: 50px;
+    text-align: justify;
+    letter-spacing: 0.6px;
+}
+
+#centric2 .con{
+    padding: 0px 50px;
+} 
+
+
+#centric2 .container2{
+    padding: 30px 100px 30px 100px;
+}
+
+#centric3 .c4{
+    font-size: 25px;
+    display: inline;
+    position: absolute;
+    color: #8B9199;
+    text-align: justify;
+    padding-right: 100px;
+    letter-spacing: 0.6px;
+}
+
+#centric3 .container3{
+    padding: 50px 100px;
+}
+
+#centric3 .cel{
+    padding-top: 80px;
+}
+
+
+#centric .para{
+    font-size: 30px;
+    padding: 80px 200px;
+    color: #2C2F32;
+}
+
+#centric .end{
+    padding: 50px 150px 50px 150px;
+}
+
+#centric .end-right{
+    padding: 50px 250px 50px 250px;
+}
+
+/*----- Horizontal Line-------*/
+
+.line hr{
+    width: 70%;
+    background: black;
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: 50px;
+    height: 7px;
+    margin-bottom: 50px;
+    color: #2C2F32;
+}
+
+/*----- light and sustainability-----*/
+
+#light .container{
+    position: absolute;
+    padding: 150px 50px;
+}
+
+#light h3{
+    writing-mode: vertical-lr;
+    display: inline;
+    color: #8B9199;
+    padding: 15px;
+    transform: rotate(180deg);
+}
+
+#light .c1{
+    font-size: 25px;
+    display: inline;
+    position: absolute;
+    padding: 30px 100px 100px 100px;
+    margin: 0;
+    text-align: justify;
+    letter-spacing: 0.6px;
+}
+
+#sub-head mark{
+    color: #ff4d00;
+    background-color: white;
+}
+
+#sub-head h4{
+    padding: 420px 145px 20px 145px;
+    line-height: 40px;
+    font-size: 30px;
+}
