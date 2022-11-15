@@ -17,6 +17,11 @@ html{
 /* --------INTRO-------- 
 
 /* Default height for small devices */
+@media only screen and (max-width: 570px) {
+    #intro .bg-image{
+        height: 100vh;
+    }
+}
 #intro .bg-image{
     height: 100vh;
 }
@@ -53,160 +58,463 @@ html{
     color: #8B9199;
 }
 
-/*------Human-centric light---------*/
+/*--- Human-Centric Design----*/
 
-#centric mark,
-#centric1 mark,
-#centric2 mark,
-#centric3 mark{
-    color: #ff4d00;
-    background-color: white;
-}
-
-#centric .container{
+.centric {
+    background-color: #ffffff;
+  }
+  
+  .centric.ps {
+    padding-left: 30%;
+  }
+  
+  .centric.pe {
+    padding-right: 10%;
+  }
+  
+  .centric.py {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .centric h1 {
+    font-size: 2rem;
+    line-height: 1.2cm;
+  }
+  
+  .centric h1 span,
+  .orange-text {
+    color: #ff6d2d;
+    font-weight: 600;
+  }
+  
+  .centric .sticky-text,
+  .technology .sticky-text {
     position: absolute;
-    padding: 150px 50px;
-}
-
-#centric h3{
+    overflow: visible;
+    height: 220%;
+    left: 6vw;
+  }
+  
+  .centric .sticky-text h1,
+  .light .sticky-text h1,
+  .technology .sticky-text h1 {
+    font-size: 2rem;
+    font-weight: 600;
     writing-mode: vertical-lr;
-    display: inline;
-    color: #8B9199;
-    padding: 15px;
     transform: rotate(180deg);
-}
-
-#centric .c1{
-    font-size: 25px;
-    display: inline;
-    position: absolute;
-    padding: 30px 100px 100px 100px;
-    margin: 0;
-    text-align: justify;
-    letter-spacing: 0.6px;
-}
-
-#centric h4,
-#centric1 h4,
-#centric2 h4,
-#centric3 h4{
-    font-size: 25px;
-    padding-bottom: 30px;
-}
-
-#centric1 .c2{
-    font-size: 25px;
-    display: inline;
+    color: #8b9199;
+    position: sticky;
+    top: 15%;
+  }
+  
+  .centric .centric-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem 0;
+  }
+  
+  .centric-card h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .centric-card p {
     color: #8B9199;
+    font-size: 1.2rem;
+  }
+
+  .centric-card img {
+    max-width: 100% !important;
+    height: auto;
+  }
+  
+  .centric-card .card {
     position: relative;
-    text-align: justify;
-    letter-spacing: 0.6px;
-}
-
-
-#centric1 .container1{
-    padding: 500px 100px 50px 150px;
-}
-
-#centric2 .c3{
-    font-size: 25px;
-    position: relative;
-    display: inline;
-    margin: 0;
-    color: #8B9199;
-    padding-top: 50px;
-    text-align: justify;
-    letter-spacing: 0.6px;
-}
-
-#centric2 .con{
-    padding: 0px 50px;
-} 
-
-
-#centric2 .container2{
-    padding: 30px 100px 30px 100px;
-}
-
-#centric3 .c4{
-    font-size: 25px;
-    display: inline;
+    height: 40vh;
+    width: 40vh;
+    cursor: pointer;
+    box-shadow: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  @media only screen and (max-width: 570px) {
+    .centric.ps {
+      padding-left: 20%;
+    }
+  
+    .centric .pe {
+      padding-right: 10%;
+    }
+  
+    .centric .sticky-text {
+      height: 330%;
+    }
+  
+    .centric h1 {
+      font-size: 1.3rem;
+      line-height: 0.8cm;
+    }
+  
+    .centric .sticky-text h1,
+    .light .sticky-text h1,
+    .technology .sticky-text h1 {
+      font-size: 1.3rem;
+      top: 12%;
+    }
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    scale: 1.2;
+  }
+  
+  .card .focus {
     position: absolute;
-    color: #8B9199;
-    text-align: justify;
-    padding-right: 100px;
-    letter-spacing: 0.6px;
-}
+    z-index: 1;
+    top: 15px;
+    width: 80%;
+  }
 
-#centric3 .container3{
-    padding: 50px 100px;
-}
-
-#centric3 .cel{
-    padding-top: 80px;
-}
-
-
-#centric .para{
+  .card .converse {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 80%;
+  }
+  
+  .card .celebrate {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 80%;
+  }
+ 
+  .centric .conclusion{
     font-size: 30px;
-    padding: 80px 200px;
     color: #2C2F32;
-}
+    padding-bottom: 100px;
+  }
 
-#centric .end{
-    padding: 50px 150px 50px 150px;
-}
+  .centric i {
+    color: #ff6d2f;
+    font-size: 35px;
+  }
 
-#centric .end-right{
-    padding: 50px 250px 50px 250px;
-}
+  .centric p span{
+    color: #ff6d2d;
+    font-weight: 600;
+  }
 
-/*----- Horizontal Line-------*/
+  /*----- Horizontal Line-------*/
 
 .line hr{
-    width: 70%;
-    background: black;
-    position: relative;
-    top: 20px;
-    border: none;
-    border-radius: 50px;
-    height: 7px;
-    margin-bottom: 50px;
-    color: #2C2F32;
+  width: 70%;
+  background: black;
+  position: relative;
+  top: 20px;
+  border: none;
+  border-radius: 50px;
+  height: 5px;
+  margin-bottom: 50px;
+  color: #2C2F32;
 }
 
 /*----- light and sustainability-----*/
 
-#light .container{
-    position: absolute;
-    padding: 150px 50px;
+.light h4 span{
+  color: #ff6d2d;
+  font-weight: 600;
 }
 
-#light h3{
-    writing-mode: vertical-lr;
-    display: inline;
-    color: #8B9199;
-    padding: 15px;
-    transform: rotate(180deg);
+.light {
+  background-color: #ffffff;
 }
 
-#light .c1{
-    font-size: 25px;
-    display: inline;
-    position: absolute;
-    padding: 30px 100px 100px 100px;
-    margin: 0;
-    text-align: justify;
-    letter-spacing: 0.6px;
+.light.ps {
+  padding-left: 30%;
 }
 
-#sub-head mark{
-    color: #ff4d00;
-    background-color: white;
+.light.pe {
+  padding-right: 10%;
 }
 
-#sub-head h4{
-    padding: 420px 145px 20px 145px;
-    line-height: 40px;
-    font-size: 30px;
+.light.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.light h1 {
+  font-size: 2rem;
+  line-height: 1.2cm;
+}
+
+.light h1 span,
+.orange-text {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.light .sticky-text{
+  position: absolute;
+  overflow: visible;
+  height: 460%;
+  left: 6vw;
+}
+
+.light .light-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.light-card h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.light-card p {
+  color: #8B9199;
+  font-size: 1.2rem;
+}
+
+.light-card ul {
+  color: #8B9199;
+  font-size: 1.2rem;
+}
+
+.light-card img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.light-card .card {
+  position: relative;
+  height: 40vh;
+  width: 40vh;
+  cursor: pointer;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 570px) {
+  .light.ps {
+    padding-left: 20%;
+  }
+
+  .light .pe {
+    padding-right: 10%;
+  }
+
+  .light .sticky-text {
+    height: 720%;
+  }
+
+  .light h1 {
+    font-size: 1.3rem;
+    line-height: 0.8cm;
+  }
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  scale: 1.2;
+}
+
+.card .pollution {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 80%;
+}
+
+.card .carbon {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .imbalance {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .cash{
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .community{
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .diverse{
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.light i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.light p span{
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+
+/*---- Light and Technology----*/
+
+.technology h4 span{
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.technology {
+  background-color: #ffffff;
+}
+
+.technology.ps {
+  padding-left: 30%;
+}
+
+.technology.pe {
+  padding-right: 10%;
+}
+
+.technology.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.technology h1 {
+  font-size: 2rem;
+  line-height: 1.2cm;
+}
+
+.technology h1 span,
+.orange-text {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.technology .sticky-text{
+  position: absolute;
+  overflow: visible;
+  height: 200%;
+  left: 6vw;
+}
+
+.technology .technology-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.technology-card h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.technology-card p {
+  color: #8B9199;
+  font-size: 1.2rem;
+}
+
+.technology-card ul {
+  color: #8B9199;
+  font-size: 1.2rem;
+}
+
+.technology-card img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.technology-card .card {
+  position: relative;
+  height: 40vh;
+  width: 40vh;
+  cursor: pointer;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 570px) {
+  .technology.ps {
+    padding-left: 20%;
+  }
+
+  .technology .pe {
+    padding-right: 10%;
+  }
+
+  .technology .sticky-text {
+    height: 220%;
+  }
+
+  .technology h1 {
+    font-size: 1.3rem;
+    line-height: 0.8cm;
+  }
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  scale: 1.2;
+}
+
+.card .data {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 80%;
+}
+
+.card .informed {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .society {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.technology i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.technology p span{
+  color: #ff6d2d;
+  font-weight: 600;
 }
