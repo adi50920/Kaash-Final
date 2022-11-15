@@ -1,0 +1,233 @@
+*{
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+  /* -------header section--------- */
+#header{
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+}
+
+/* --------INTRO-------- 
+
+/* Default height for small devices */
+@media only screen and (max-width: 570px) {
+    #intro .bg-image{
+        height: 100vh;
+    }
+}
+#intro .bg-image{
+    height: 100vh;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+    #intro .bgimage{
+      height: 100vh;
+    }
+} 
+
+.bg-image p{
+    color: #8B9199;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 650px;
+} 
+
+.arrow{
+    padding: 40px 50px;
+    background-color: #070808;
+}
+
+/*--- Light School----*/
+
+  .school {
+    background-color: #070808;
+  }
+  
+  .school.ps {
+    padding-left: 13%;
+  }
+  
+  .school.pe {
+    padding-right: 10%;
+  }
+  
+  .school.py {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  .orange-text {
+    color: #ff6d2d;
+    font-weight: 600;
+  }
+  
+  .school .sticky-text,
+  .technology .sticky-text {
+    position: absolute;
+    overflow: visible;
+    height: 1020%;
+    left: 6vw;
+  }
+  
+  .school .sticky-text h1,
+  .light .sticky-text h1,
+  .technology .sticky-text h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: #8b9199;
+    position: sticky;
+    top: 15%;
+  }
+  
+  .school .school-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem 0;
+  }
+  
+  .school-card h2 {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  
+  .school-card p {
+    color: #8B9199;
+    font-size: 1.2rem;
+  }
+
+  .school-card img {
+    max-width: 100% !important;
+    height: auto;
+  }
+  
+  .school-card .card {
+    position: relative;
+    height: 40vh;
+    width: 40vh;
+    cursor: pointer;
+    box-shadow: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  .school-card i {
+    color: #ff6d2f;
+    font-size: 35px;
+  }
+  
+  @media only screen and (max-width: 570px) {
+    .school.ps {
+      padding-left: 20%;
+    }
+  
+    .school .pe {
+      padding-right: 10%;
+    }
+  
+    .school .sticky-text {
+      height: 330%;
+    }
+  
+    .school h1 {
+      font-size: 1.3rem;
+      line-height: 0.8cm;
+    }
+  
+    .school .sticky-text h1,
+    .light .sticky-text h1,
+    .technology .sticky-text h1 {
+      font-size: 1.3rem;
+      top: 12%;
+    }
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    scale: 1.2;
+  }
+  
+  .card .image {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    left: 20px;
+    width: 80%;
+  }
+
+/* FOOTER  */
+
+/* upper-footer   */
+
+.upper-container {
+    background-color: #2c2f32;
+    width: 100%;
+  }
+  .form-field input {
+    font-size: 30px;
+  }
+  .form-field textarea {
+    font-size: 30px;
+  }
+  .upper-section-footer .text-start {
+    font-size: 2rem;
+  }
+  .upper-section-footer .upper-text h2 {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: 700px) {
+    .upper-section-footer .text-start {
+      font-size: 1.2rem;
+    }
+    .upper-section-footer .upper-text h2 {
+      font-size: 2.5rem;
+    }
+  }
+  /* lower-footer */
+  
+  .lower-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .lower-container .text-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
+  }
+  .lower-container .text-row .row ul {
+    list-style: none;
+  }
+  .lower-container .text-row .row ul li {
+    padding: 10px;
+    color: #8b9199;
+  }
+  
+  .lower-container .image-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+  }
+  .lower-container .image-row img {
+    height: 34px;
+  }
+  .lower-container .image-row p {
+    font-weight: 600;
+    color: white;
+  }
+  
