@@ -518,3 +518,67 @@ html{
   color: #ff6d2d;
   font-weight: 600;
 }
+
+/* FOOTER  */
+
+/* upper-footer   */
+
+.upper-container {
+  background-color: #2c2f32;
+  width: 100%;
+}
+.form-field input {
+  font-size: 30px;
+}
+.form-field textarea {
+  font-size: 30px;
+}
+.upper-section-footer .text-start {
+  font-size: 2rem;
+}
+.upper-section-footer .upper-text h2 {
+  font-size: 4rem;
+}
+@media only screen and (max-width: 700px) {
+  .upper-section-footer .text-start {
+    font-size: 1.2rem;
+  }
+  .upper-section-footer .upper-text h2 {
+    font-size: 2.5rem;
+  }
+}
+/* lower-footer */
+
+.lower-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.lower-container .text-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 100px;
+}
+.lower-container .text-row .row ul {
+  list-style: none;
+}
+.lower-container .text-row .row ul li {
+  padding: 10px;
+  color: #8b9199;
+}
+
+.lower-container .image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+}
+.lower-container .image-row img {
+  height: 34px;
+}
+.lower-container .image-row p {
+  font-weight: 600;
+  color: white;
+}
