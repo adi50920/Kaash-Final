@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+
 * {
   box-shadow: none;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 /* header section */
 #header {
@@ -43,23 +46,20 @@
   height: 100vh;
   background-size: cover;
   position: relative;
-  margin-bottom: -90px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #hero h2 {
-  color: #ff6d2d;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  text-transform: uppercase;
-  text-shadow: -1px 0 2px #ff4d00;
+  color: #ff6d2f;
+  font-size: 45px;
+  font-weight: 600;
 }
 
 #background-video {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -89,15 +89,15 @@
 
 .info {
   background-color: #000;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 400px;
+  padding-bottom: 400px;
 }
 
 .animate {
   font-weight: 600;
   margin: auto;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 21%;
+  padding-right: 20%;
 
   text-align: left;
   color: black;
@@ -106,15 +106,18 @@
   background-image: linear-gradient(
     -225deg,
 
-    #ff9d00 0%,
-    #ff1361 50%,
-    #ff9d00 100%
+    #c90492 0%,
+    #ff2e00 50%,
+    #c90492 100%
   );
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 4s linear infinite;
+}
+.animate {
+  line-height: 1.7cm;
 }
 
 @keyframes textclip {
@@ -123,25 +126,30 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .animate {
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 2rem;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .animate {
+    font-size: 1.3rem;
+  }
+}
 /* SOLUTIONS */
 .solutions {
   background-color: #f2f2f2;
 }
 
 .solutions.ps {
-  padding-left: 30%;
+  padding-left: 25%;
 }
 
 .solutions.pe {
-  padding-right: 10%;
+  padding-right: 15%;
 }
 
 .solutions.py {
@@ -152,6 +160,8 @@
 .solutions h1 {
   font-size: 2rem;
   line-height: 1.2cm;
+  font-weight: 300;
+  color: #2c2f32;
 }
 
 .solutions h1 span,
@@ -165,8 +175,7 @@
 .processes .sticky-text {
   position: absolute;
   overflow: visible;
-  height: 220%;
-  left: 6vw;
+  left: 11vw;
 }
 
 .solutions .sticky-text h1,
@@ -180,7 +189,9 @@
   position: sticky;
   top: 15%;
 }
-
+.solutions .sticky-text {
+  height: 220%;
+}
 .solutions .solution-card {
   display: flex;
   width: 100%;
@@ -191,12 +202,19 @@
 
 .solution-card h2 {
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #2c2f32;
 }
-
+.redirect {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ff6d2f;
+}
 .solution-card p {
   color: #2c2f32;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .solution-card i {
@@ -209,6 +227,10 @@
   height: auto;
 }
 
+.solutions i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
 .solution-card .card {
   position: relative;
   height: 40vh;
@@ -218,23 +240,56 @@
   overflow: hidden;
   background-color: transparent;
 }
-
+@media only screen and (max-width: 820px) {
+  .solutions .sticky-text {
+    height: 180%;
+  }
+}
 @media only screen and (max-width: 570px) {
+  .solutions .sticky-text {
+    height: 240%;
+  }
+}
+@media only screen and (max-width: 850px) {
   .solutions.ps {
     padding-left: 20%;
   }
-
+  .redirect {
+    font-size: 0.8rem;
+  }
+  .solutions h1 {
+    font-size: 1.3rem;
+  }
+  .solution-card h2 {
+    font-size: 1.3rem;
+  }
+  .solution-card p {
+    font-size: 0.8rem;
+  }
+  .solution-card h2 {
+    margin-bottom: 1.3rem;
+  }
   .solutions .pe {
     padding-right: 10%;
   }
 
-  .solutions .sticky-text {
-    height: 270%;
+  .solution-card i {
+    color: #ff6d2f;
+    font-size: 25px;
+  }
+  .solutions i {
+    color: #ff6d2f;
+    font-size: 25px;
   }
 
   .solutions h1 {
     font-size: 1.3rem;
     line-height: 0.8cm;
+  }
+  .solutions .sticky-text,
+  .project .sticky-text,
+  .processes .sticky-text {
+    left: 3vw;
   }
 
   .solutions .sticky-text h1,
@@ -397,11 +452,15 @@
 /* PROJECTS */
 
 .project.ps {
-  padding-left: 30%;
+  padding-left: 25%;
 }
 
 .project.pe {
-  padding-right: 10%;
+  padding-right: 15%;
+}
+
+.padk {
+  margin-bottom: 15rem;
 }
 
 .project.py {
@@ -412,9 +471,13 @@
 .project {
   background-color: #2c2f32;
 }
+.project i {
+  color: #ff6d2d;
+  font-size: 35px;
+}
 
 .project-card .text {
-  color: #f2f2f2;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 .project-card i {
@@ -424,10 +487,19 @@
 .project .sticky-text {
   height: 420%;
 }
+@media only screen and (max-width: 820px) {
+  .project .sticky-text {
+    height: 180%;
+  }
+}
 
 @media only screen and (max-width: 570px) {
   .project .sticky-text {
-    height: 250%;
+    height: 210%;
+  }
+
+  .project i {
+    font-size: 25px;
   }
   .project.pe {
     padding-right: 0%;
@@ -435,19 +507,30 @@
   .project.ps {
     padding-left: 13%;
   }
+  .project-card .text {
+    color: #f2f2f2;
+    font-size: 0.8rem;
+  }
+  .project-card i {
+    color: #ff6d2f;
+    font-size: 25px;
+  }
 }
 
 /* PROCESSES */
 .processes {
   background-color: #f2f2f2;
 }
-
+.processes i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
 .processes.ps {
-  padding-left: 30%;
+  padding-left: 25%;
 }
 
 .processes.pe {
-  padding-right: 10%;
+  padding-right: 15%;
 }
 
 .processes.py {
@@ -458,23 +541,57 @@
 .processes h1 {
   font-size: 2rem;
   line-height: 1.2cm;
+  font-weight: 300;
+  color: #2c2f32;
 }
 
 .processes-card {
   margin: 10rem 0rem;
 }
+.processes-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.processes-card p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 .processes .sticky-text {
   height: 160%;
 }
+.light-img {
+  width: 30%;
+  height: 250px;
+}
 
-@media only screen and(max-width:992px) {
-  .processes-card img {
-    max-height: 450px;
+@media only screen and (max-width: 850px) {
+  .processes h1 {
+    font-size: 1.3rem;
+    line-height: 0.7cm;
+  }
+  .processes-card h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .processes-card p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .processes .processes-card img {
+    height: 210px;
+    width: 250px;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 570px) {
   .processes.ps {
     padding-left: 20%;
+  }
+  .processes .processes-card img {
+    height: 170px;
+    width: 200px;
+    margin: auto;
   }
   .processes h1 {
     font-size: 1.3rem;
@@ -489,7 +606,7 @@
   }
 
   .processes .sticky-text {
-    height: 250%;
+    height: 160%;
   }
 }
 /* FOOTER  */
@@ -507,17 +624,26 @@
   font-size: 30px;
 }
 .upper-section-footer .text-start {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .upper-section-footer .upper-text h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+}
+.text {
+  font-size: 0.8rem;
 }
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .upper-section-footer .upper-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 0.8rem;
   }
 }
 /* lower-footer */
@@ -531,7 +657,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px;
+  padding: 100px 100px 10px 100px;
 }
 .lower-container .text-row .row ul {
   list-style: none;
@@ -539,6 +665,10 @@
 .lower-container .text-row .row ul li {
   padding: 10px;
   color: #8b9199;
+}
+.start-form input,
+.start-form textarea {
+  background-color: #2c2f32;
 }
 
 .lower-container .image-row {
@@ -554,4 +684,22 @@
 .lower-container .image-row p {
   font-weight: 600;
   color: white;
+}
+
+.start-form input {
+  width: 18rem;
+}
+.start-form textarea {
+  resize: none;
+  width: 83%;
+}
+
+@media only screen and (max-width: 500px) {
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form textarea {
+    resize: none;
+    width: 79%;
+  }
 }

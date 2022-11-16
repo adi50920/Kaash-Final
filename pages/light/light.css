@@ -34,7 +34,7 @@
 /* head  */
 
 .light-head {
-  background-image: url(/images/light/image\ 42.png);
+  background-image: url(/images/light/dark-gbe0fbf52a_1920\ 1.png);
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -46,18 +46,16 @@
 }
 
 .light-head .light-nav {
-  padding-top: 400px;
+  padding-top: 600px;
 }
-.light-head .light-nav ul {
-  list-style: none;
+.light-head .light-nav a:hover {
+  color: #a6adb5;
 }
-.light-head .light-nav ul li {
-  margin: 20px;
-  text-align: center;
-}
-.light-head .light-nav ul li a {
+.light-head .light-nav a,
+.light-head .light-nav p {
   text-decoration: none;
-  font-size: 30px;
+  margin: 0px 60px;
+  font-size: 2rem;
   color: #8b9199;
   font-weight: 550;
 }
@@ -66,8 +64,8 @@
 
 .light-main {
   background-color: #2c2f32;
-  padding-right: 10%;
-  padding-left: 20%;
+  padding-right: 20%;
+  padding-left: 30%;
 }
 .light-main .sticky-text h1 {
   font-size: 2rem;
@@ -78,12 +76,15 @@
   position: sticky;
   top: 15%;
 }
+.marg {
+  margin-bottom: 25%;
+}
 .light-main .sticky-text {
   position: absolute;
   overflow: visible;
-  height: 150%;
-  left: 6vw;
-  margin-top: 2rem;
+  height: 200%;
+  left: 11vw;
+  margin-top: 10rem;
 }
 .light-main .light-section {
   display: flex;
@@ -92,8 +93,7 @@
   width: 100%;
 }
 .light-main .light-section .light-card {
-  width: 300px;
-  margin: 100px;
+  width: 55%;
 }
 .right-card {
   display: flex;
@@ -111,22 +111,44 @@
   font-weight: 600;
   color: #eb642c;
 }
+.arrow {
+  font-size: 35px;
+  color: #eb642c;
+}
 @media only screen and (max-width: 750px) {
   .light-main .sticky-text h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .light-head .light-nav a,
+  .light-head .light-nav p {
+    margin: 0px 20px;
+  }
+
+  .light-main .sticky-text {
+    left: 0vw;
+  }
+  .arrow {
+    font-size: 25px;
+  }
+
+  .light-head .light-nav a,
+  .light-head .light-nav p {
+    font-size: 1.3rem;
+  }
+
+  .light-main .light-section .light-card p {
+    font-size: 0.8rem;
   }
   .light-main .sticky-text {
-    height: 120%;
+    height: 80%;
   }
   .light-main {
     padding-left: 20%;
   }
   .light-main .light-section .light-card {
-    margin: 20px;
     width: 230px;
   }
-  .light-main .light-section .light-card {
-  }
+
   .light-main .light-main-head p {
     margin: 0;
   }
@@ -140,6 +162,7 @@
     justify-content: space-evenly;
   }
 }
+/* FOOTER  */
 
 /* upper-footer   */
 
@@ -154,17 +177,26 @@
   font-size: 30px;
 }
 .upper-section-footer .text-start {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .upper-section-footer .upper-text h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+}
+.text {
+  font-size: 0.8rem;
 }
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .upper-section-footer .upper-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 0.8rem;
   }
 }
 /* lower-footer */
@@ -178,7 +210,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px;
+  padding: 100px 100px 10px 100px;
 }
 .lower-container .text-row .row ul {
   list-style: none;
@@ -186,6 +218,10 @@
 .lower-container .text-row .row ul li {
   padding: 10px;
   color: #8b9199;
+}
+.start-form input,
+.start-form textarea {
+  background-color: #2c2f32;
 }
 
 .lower-container .image-row {
@@ -201,4 +237,22 @@
 .lower-container .image-row p {
   font-weight: 600;
   color: white;
+}
+
+.start-form input {
+  width: 18rem;
+}
+.start-form textarea {
+  resize: none;
+  width: 83%;
+}
+
+@media only screen and (max-width: 500px) {
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form textarea {
+    resize: none;
+    width: 79%;
+  }
 }

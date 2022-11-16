@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+
     <!-- Bootstrap core css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -43,7 +45,7 @@
     <header id="header" class="fixed-top header-transparent">
       <div class="container d-flex">
         <div class="logo">
-          <a href="/pages/home/home.html">
+          <a href="/pages/home/index.html">
             <img src="/images/logo.png" alt="" class="img-fluid" />
           </a>
         </div>
@@ -64,10 +66,18 @@
                 <a class="dropdown-item text-dark" href="talk.html">TALK</a>
               </li>
               <li>
-                <a class="dropdown-item text-dark" href="#">MORE</a>
+                <a
+                  class="dropdown-item text-dark"
+                  href="/pages/about/about.html"
+                >
+                  ABOUT
+                </a>
               </li>
               <li>
-                <a class="dropdown-item text-dark" href="/light.html">
+                <a
+                  class="dropdown-item text-dark"
+                  href="/pages/light/light.html"
+                >
                   LIGHT
                 </a>
               </li>
@@ -78,12 +88,12 @@
     </header>
     <!-- head-sction -->
     <section>
-      <div class="light-head">
-        <div class="light-nav">
-          <ul>
-            <li><a href="">Concepts</a></li>
-            <li><a href="">Light School</a></li>
-            <li><a href="">Projects</a></li>
+      <div class="light-head background-tint">
+        <div class="light-nav d-flex align-items-center justify-content-between">
+            <a href="">Concepts</a>
+
+            <a href="">Light School</a>
+           <a href="/pages/projects/project.html">Projects</a>
           </ul>
         </div>
       </div>
@@ -97,7 +107,7 @@
         </div>
         <div class="light-section">
           <div class="light-cards">
-            <div class="light-card">
+            <div style="margin-top: 15rem;" class="light-card marg">
               <h2>
                 <span>
                   Concepts
@@ -108,13 +118,10 @@
                 for thoughtful light planning.
               </p>
               <a href="">
-                <i
-                  class="fa-solid fa-arrow-right"
-                  style="font-size: 30px; color: #eb642c;"
-                ></i>
+                <i class="fa-solid arrow fa-arrow-right"></i>
               </a>
             </div>
-            <div class="right-card">
+            <div class="right-card marg">
               <div class="light-card">
                 <h2>
                   <span>
@@ -126,14 +133,11 @@
                   to talk more.
                 </p>
                 <a href="">
-                  <i
-                    class="fa-solid fa-arrow-right"
-                    style="font-size: 30px; color: #eb642c;"
-                  ></i>
+                  <i class="fa-solid arrow fa-arrow-right"></i>
                 </a>
               </div>
             </div>
-            <div class="light-card">
+            <div class="light-card marg">
               <h2>
                 <span>
                   Projects
@@ -144,10 +148,7 @@
                 comfortable with our work.
               </p>
               <a href="">
-                <i
-                  class="fa-solid fa-arrow-right"
-                  style="font-size: 30px; color: #eb642c;"
-                ></i>
+                <i class="fa-solid arrow fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -158,19 +159,19 @@
     <!-- upper-footer  -->
 
     <section class="upper-section-footer">
-      <div class="upper-container" style="padding: 10%;">
+      <div class="upper-container" style="padding: 20%;">
         <div class="upper-container-main">
           <div class="upper-text">
-            <h2 style="color: #ff6d2f; font-weight: 600;">
+            <h2 class="my-5" style="color: #ff6d2f; font-weight: 600;">
               Light on your mind??
             </h2>
             <div class="d-flex w-100 align-items-end flex-column">
               <div class="text-start">
-                <p class="m-0" style="color: #f2f2f2;">
+                <p class="m-0" style="color: #8b9199; font-weight: 300;">
                   We are always open for new collaborations.
                 </p>
                 <p>
-                  <span style="color: #ff6d2f;">
+                  <span style="color: #ff6d2f; font-weight: 600;">
                     Say Hi !!
                   </span>
                 </p>
@@ -178,18 +179,18 @@
             </div>
           </div>
           <div
-            class="upper-contact d-flex align-items-center"
-            style="margin: 8rem 0; font-size: 25px;"
+            class="upper-contact label d-flex align-items-center"
+            style="margin: 8rem 0;"
           >
             <img
               src="/images/Footer/contact-us-5463949-4568180 1.png"
               alt=""
               class="me-4"
             />
-            <div style="color: #f2f2f2;">
-              <p>+352 691 566 820</p>
-              <p>moien@kaash.eu</p>
-              <p>
+            <div style="color: #8b9199;">
+              <p style="margin-bottom: 0;">+352 691 566 820</p>
+              <p style="margin-bottom: 0;">moien@kaash.eu</p>
+              <p style="margin-bottom: 0;">
                 41a rue des romains 8041, Luxembourg
               </p>
             </div>
@@ -198,31 +199,27 @@
             <img
               src="/images/Footer/letter-5314533-4440388 1.png"
               alt=""
-              class="me-0 me-md-5 d-none d-md-block"
+              class="me-0 d-none d-md-block"
             />
             <div class="start-form">
-              <div class="d-flex flex-column" style="color: #f2f2f2;">
+              <div class="d-flex w-100 flex-column" style="color: #8b9199;">
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Name</label>
+                  <label class="text" for="name">Name</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Email</label>
+                  <label class="text" for="name">Email</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Contact</label>
+                  <label class="text" for="name">Contact</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">
-                    Contact
+                  <label class="text" for="name">
+                    Message
                   </label>
-                  <textarea
-                    class="my-1"
-                    rows="3"
-                    style="resize: none; width: 74%;"
-                  ></textarea>
+                  <textarea class="my-1" rows="3"></textarea>
                 </div>
               </div>
             </div>
@@ -238,7 +235,7 @@
         <div class="text-row">
           <div class="row">
             <ul>
-              <li>Kaash</li>
+              <li>Expertise</li>
               <li>Talk</li>
               <li>More</li>
               <li>Light</li>
@@ -246,18 +243,10 @@
           </div>
           <div class="row">
             <ul>
-              <li>History</li>
-              <li>Expertise</li>
-              <li>Commercials</li>
-              <li>Light science</li>
-            </ul>
-          </div>
-          <div class="row">
-            <ul>
               <li>HCL</li>
               <li>Sustainability</li>
               <li>Technology</li>
-              <li>Design cycle</li>
+              <li>Processes</li>
             </ul>
           </div>
           <div class="row">
@@ -268,16 +257,24 @@
               <li>Trainings</li>
             </ul>
           </div>
+          <div class="row">
+            <ul>
+              <li>History</li>
+              <li>Company</li>
+              <li>Partners</li>
+              <li>Careers</li>
+            </ul>
+          </div>
         </div>
-        <div class="image-row">
+        <div class="image-row" style="padding: 0 10%;">
+          <p style="margin-top: 20px;">K A A S H</p>
           <img src="/images/Footer/image 41.png" alt="" />
-          <p>K A A S H</p>
           <img src="/images/Footer/Luxembourg White 2.png" alt="" />
         </div>
       </div>
     </section>
 
-    <!--Bootstrap JS-->
+        <!--Bootstrap JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -288,5 +285,5 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
     ></script>
-  </body>
+</body>
 </html>
