@@ -101,20 +101,25 @@
 .margin-tp {
   margin-top: 50%;
 }
-
+@media only screen and (max-width: 1000px) {
+  .main .sticky-text {
+    height: 1050%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main .sticky-text {
+    height: 900%;
+  }
+}
 .specific p {
   margin-bottom: 0;
 }
-@media only screen and (max-width: 400px) {
-}
+
 @media only screen and (max-width: 900px) {
   .main .arrow {
     margin-left: 0rem;
     margin-top: 0rem;
     width: 100px;
-  }
-  .main .sticky-text {
-    height: 1050%;
   }
   .main .sticky-text h1 {
     font-size: 1.3rem;
@@ -212,6 +217,8 @@
 .start-form textarea {
   resize: none;
   width: 83%;
+  border-style: inset;
+  border-width: 2px;
 }
 
 @media only screen and (max-width: 500px) {

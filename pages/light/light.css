@@ -115,6 +115,19 @@
   font-size: 35px;
   color: #eb642c;
 }
+.light-main .sticky-text {
+  height: 130%;
+}
+@media only screen and (max-width: 1000px) {
+  .light-main .sticky-text {
+    height: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .light-main .sticky-text {
+    height: 80%;
+  }
+}
 @media only screen and (max-width: 750px) {
   .light-main .sticky-text h1 {
     font-size: 1.3rem;
@@ -125,7 +138,7 @@
   }
 
   .light-main .sticky-text {
-    left: 0vw;
+    left: 3vw;
   }
   .arrow {
     font-size: 25px;
@@ -139,9 +152,7 @@
   .light-main .light-section .light-card p {
     font-size: 0.8rem;
   }
-  .light-main .sticky-text {
-    height: 80%;
-  }
+
   .light-main {
     padding-left: 20%;
   }
@@ -245,6 +256,8 @@
 .start-form textarea {
   resize: none;
   width: 83%;
+  border-style: inset;
+  border-width: 2px;
 }
 
 @media only screen and (max-width: 500px) {

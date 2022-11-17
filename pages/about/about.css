@@ -186,6 +186,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .projects .sticky-text {
+    height: 450%;
+  }
   .projects .text {
     font-size: 0.8rem;
     width: 80%;
@@ -207,6 +210,8 @@
   .projects.pe {
     padding-right: 0%;
   }
+}
+@media (max-width: 500px) {
   .projects .sticky-text {
     height: 500%;
   }
@@ -266,7 +271,7 @@
   font-weight: 300;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .services .text {
     font-size: 0.8rem;
     width: 60%;
@@ -375,6 +380,8 @@
 .start-form textarea {
   resize: none;
   width: 83%;
+  border-style: inset;
+  border-width: 2px;
 }
 
 @media only screen and (max-width: 500px) {
