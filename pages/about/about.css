@@ -40,7 +40,7 @@
 /* top section  */
 
 .background {
-  background: url(/images/about/image\ 42.png), #070808;
+  background: url(../../images/about/image\ 42.png), #070808;
   background-repeat: no-repeat;
   /* background-size: cover; */
   width: 100%;

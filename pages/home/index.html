@@ -40,7 +40,7 @@
     <!-- CSS link-->
     <link rel="stylesheet" href="./home .css" />
     <!--js link-->
-    <script type="text/javascript" src="assets/js/javascript.js"></script>
+    <script type="text/javascript" src="../../javascript/javscript.js"></script>
   </head>
   <body>
     <!-- header-->
@@ -51,31 +51,57 @@
             <img src="../../images/logo.png" alt="" class="img-fluid" />
           </a>
         </div>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle d-flex align-items-center hidden-arrow"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img src="../../images/menu-icon.svg" alt="" />
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <img onclick="openNav()" src="../../images/menu-icon.svg" alt="">
+        </div>
+        <div id="mysidepanel" class="sidepanel">
+          <div class="container logo">
+            <a href="index.html">
+              <img src="../../images/logo.png" alt="" class="img-fluid" />
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item text-dark" href="/pages/talk/talk.html">TALK</a>
-              </li>
-              <li>
-                <a class="dropdown-item text-dark" href="/pages/about/about.html">ABOUT</a>
-              </li>
-              <li>
-                <a class="dropdown-item text-dark" href="/pages/light/light.html">LIGHT</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+          <div class="container navbar-nav ms-auto mb-2 mb-lg-0">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <div class="side row row-cols-1 row-cols-md-3 g-4" style="background-color: #f2f2f2;">
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="#"><h3 class="card-title">TALK</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="#">Human centric design</a></center><br/><br/><br/>
+                  <center><a href="#">Sustainability</a></center><br/><br/><br/>
+                  <center><a href="#">Technology</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="#"><h3 class="card-title">ABOUT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="#">Company</a></center><br/><br/><br/>
+                  <center><a href="#">Possibilities</a></center><br/><br/><br/>
+                  <center><a href="#">Services</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="#"><h3 class="card-title">LIGHT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="#">Concepts</a></center><br/><br/><br/>
+                  <center><a href="#">Light school</a></center><br/><br/><br/>
+                  <center><a href="#">Projects</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
       </div>
     </header>
     <!-- ======= Hero Section ======= -->

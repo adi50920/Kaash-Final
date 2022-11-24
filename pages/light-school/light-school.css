@@ -7,11 +7,37 @@
 html {
   scroll-behavior: smooth;
 }
-/* -------header section--------- */
+
+/* header section */
 #header {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
+  padding: 24px 0;
+}
+
+.heading-tech h1 {
+  font-size: 40px;
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  padding: 12px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  #header.header-scrolled {
+    padding: 15px 0;
+  }
 }
 
 /* --------INTRO-------- 
@@ -40,9 +66,14 @@ html {
   padding-top: 650px;
 }
 
+#intro .light {
+  font-size: 1.8rem;
+}
+
 .arrow {
-  padding: 40px 50px;
+  padding: 40px 180px;
   background-color: #070808;
+  padding-bottom: 200px;
 }
 
 /*--- Light School----*/
@@ -52,11 +83,11 @@ html {
 }
 
 .school.ps {
-  padding-left: 13%;
+  padding-left: 25%;
 }
 
 .school.pe {
-  padding-right: 10%;
+  padding-right: 15%;
 }
 
 .school.py {
@@ -65,8 +96,9 @@ html {
 }
 
 .orange-text {
-  color: #ff6d2d;
+  color: #8b9199;
   font-weight: 600;
+  font-size: 2rem;
 }
 
 .school .sticky-text,
@@ -74,7 +106,7 @@ html {
   position: absolute;
   overflow: visible;
   height: 1020%;
-  left: 6vw;
+  left: 11vw;
 }
 
 .school .sticky-text h1,
@@ -166,6 +198,7 @@ html {
   left: 20px;
   width: 80%;
 }
+
 /* FOOTER  */
 
 /* upper-footer   */
@@ -181,26 +214,17 @@ html {
   font-size: 30px;
 }
 .upper-section-footer .text-start {
-  font-size: 1.2rem;
-}
-.upper-section-footer .upper-text h2 {
   font-size: 2rem;
 }
-.label {
-  font-size: 1.2rem;
-}
-.text {
-  font-size: 0.8rem;
+.upper-section-footer .upper-text h2 {
+  font-size: 4rem;
 }
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
-    font-size: 0.8rem;
-  }
-  .upper-section-footer .upper-text h2 {
     font-size: 1.2rem;
   }
-  .text {
-    font-size: 0.8rem;
+  .upper-section-footer .upper-text h2 {
+    font-size: 2.5rem;
   }
 }
 /* lower-footer */
@@ -214,33 +238,14 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px 100px 10px 100px;
+  padding: 100px;
 }
 .lower-container .text-row .row ul {
   list-style: none;
 }
-
-.lower-container .text-row .row ul {
-  width: 120px;
-  margin: auto;
-  text-align: center;
-  border: 1px solid black;
-}
-
-.lower-container .text-row .row ul li {
-  display: inline-block;
-}
-
-.lower-container .text-row .row ul {
-  padding: 0px;
-}
 .lower-container .text-row .row ul li {
   padding: 10px;
   color: #8b9199;
-}
-.start-form input,
-.start-form textarea {
-  background-color: #2c2f32;
 }
 
 .lower-container .image-row {
@@ -256,24 +261,4 @@ html {
 .lower-container .image-row p {
   font-weight: 600;
   color: white;
-}
-
-.start-form input {
-  width: 18rem;
-}
-.start-form textarea {
-  resize: none;
-  width: 83%;
-  border-style: inset;
-  border-width: 2px;
-}
-
-@media only screen and (max-width: 500px) {
-  .start-form input {
-    width: 14rem;
-  }
-  .start-form textarea {
-    resize: none;
-    width: 79%;
-  }
 }
