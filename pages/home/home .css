@@ -390,37 +390,37 @@
 }
 /* animation for card */
 
-.card:hover > .human-clock {
+.card > .human-clock {
   animation: floatleft 3s infinite alternate 0.2s;
 }
-.card:hover > .human-human {
+.card > .human-human {
   animation: floatright 3s infinite alternate 1s;
 }
-.card:hover > .human-light {
+.card > .human-light {
   animation: floatleft 3s infinite alternate 0.2s;
 }
-.card:hover > .sustain-earth {
+.card > .sustain-earth {
   animation: floatright 3s infinite alternate 1s;
 }
-.card:hover > .sustain-light {
+.card > .sustain-light {
   animation: floatleft 3s infinite alternate 0.2s;
 }
-.card:hover > .sustain-recy {
+.card > .sustain-recy {
   animation: floatbottom 3s infinite alternate 1s;
 }
-.card:hover > .sustain-solar {
+.card > .sustain-solar {
   animation: floatleft 3s infinite alternate 0.2s;
 }
-.card:hover > .tech-earth {
+.card > .tech-earth {
   animation: floatbottom 3s infinite alternate 1s;
 }
-.card:hover > .tech-light {
+.card > .tech-light {
   animation: floatleft 3s infinite alternate 0.2s;
 }
-.card:hover > .tech-mob {
+.card > .tech-mob {
   animation: floatleft 3s infinite alternate 0.2s;
 }
-.card:hover > .tech-wheel {
+.card > .tech-wheel {
   animation: floatright 3s infinite alternate 1s;
 }
 
@@ -505,7 +505,7 @@
     font-size: 25px;
   }
   .project.pe {
-    padding-right: 0%;
+    padding-right: 4%;
   }
   .project.ps {
     padding-left: 13%;
@@ -674,6 +674,21 @@
 }
 .lower-container .text-row .row ul {
   list-style: none;
+}
+
+.lower-container .text-row .row ul {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
 }
 .lower-container .text-row .row ul li {
   padding: 10px;

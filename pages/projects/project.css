@@ -187,6 +187,21 @@
 .lower-container .text-row .row ul {
   list-style: none;
 }
+
+.lower-container .text-row .row ul {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
+}
 .lower-container .text-row .row ul li {
   padding: 10px;
   color: #8b9199;

@@ -1,218 +1,218 @@
-*{
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-  /* -------header section--------- */
-#header{
-    transition: all 0.5s;
-    z-index: 997;
-    transition: all 0.5s;
+/* -------header section--------- */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
 }
 
 /* --------INTRO-------- 
 
 /* Default height for small devices */
 @media only screen and (max-width: 570px) {
-    #intro .bg-image{
-        height: 100vh;
-    }
-}
-#intro .bg-image{
+  #intro .bg-image {
     height: 100vh;
+  }
+}
+#intro .bg-image {
+  height: 100vh;
 }
 
 /* Height for devices larger than 992px */
 @media (min-width: 992px) {
-    #intro .bgimage{
-      height: 100vh;
-    }
-} 
-
-.bg-image h1{
-    color: #ff4d00;
-    font-size: 60px;
-    padding: 220px 300px;
-    padding-bottom: 0px;
-} 
-
-.bg-image p{
-    font-size: 30px;
-    font-weight: 600;
-    padding-left: 300px;
-    padding-bottom: 300px;
-    padding-top: 190px ;
-    padding-bottom: 0px;
-    color: #8B9199;
+  #intro .bgimage {
+    height: 100vh;
+  }
 }
-  
-.bg-image ul{
-    font-size: 25px;
-    font-weight: 400;
-    padding-left: 300px;
-    padding-top: 10px;
-    color: #8B9199;
+
+.bg-image h1 {
+  color: #ff4d00;
+  font-size: 60px;
+  padding: 220px 300px;
+  padding-bottom: 0px;
+}
+
+.bg-image p {
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 300px;
+  padding-bottom: 300px;
+  padding-top: 190px;
+  padding-bottom: 0px;
+  color: #8b9199;
+}
+
+.bg-image ul {
+  font-size: 25px;
+  font-weight: 400;
+  padding-left: 300px;
+  padding-top: 10px;
+  color: #8b9199;
 }
 
 /*--- Human-Centric Design----*/
 
 .centric {
-    background-color: #ffffff;
-  }
-  
+  background-color: #ffffff;
+}
+
+.centric.ps {
+  padding-left: 30%;
+}
+
+.centric.pe {
+  padding-right: 10%;
+}
+
+.centric.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.centric h1 {
+  font-size: 2rem;
+  line-height: 1.2cm;
+}
+
+.centric h1 span,
+.orange-text {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.centric .sticky-text,
+.technology .sticky-text {
+  position: absolute;
+  overflow: visible;
+  height: 220%;
+  left: 6vw;
+}
+
+.centric .sticky-text h1,
+.light .sticky-text h1,
+.technology .sticky-text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: #8b9199;
+  position: sticky;
+  top: 15%;
+}
+
+.centric .centric-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.centric-card h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.centric-card p {
+  color: #8b9199;
+  font-size: 1.2rem;
+}
+
+.centric-card img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.centric-card .card {
+  position: relative;
+  height: 40vh;
+  width: 40vh;
+  cursor: pointer;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 570px) {
   .centric.ps {
-    padding-left: 30%;
+    padding-left: 20%;
   }
-  
-  .centric.pe {
+
+  .centric .pe {
     padding-right: 10%;
   }
-  
-  .centric.py {
-    padding-top: 10%;
-    padding-bottom: 10%;
+
+  .centric .sticky-text {
+    height: 330%;
   }
-  
+
   .centric h1 {
-    font-size: 2rem;
-    line-height: 1.2cm;
+    font-size: 1.3rem;
+    line-height: 0.8cm;
   }
-  
-  .centric h1 span,
-  .orange-text {
-    color: #ff6d2d;
-    font-weight: 600;
-  }
-  
-  .centric .sticky-text,
-  .technology .sticky-text {
-    position: absolute;
-    overflow: visible;
-    height: 220%;
-    left: 6vw;
-  }
-  
+
   .centric .sticky-text h1,
   .light .sticky-text h1,
   .technology .sticky-text h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    color: #8b9199;
-    position: sticky;
-    top: 15%;
+    font-size: 1.3rem;
+    top: 12%;
   }
-  
-  .centric .centric-card {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin: 8rem 0;
-  }
-  
-  .centric-card h2 {
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-  }
-  
-  .centric-card p {
-    color: #8B9199;
-    font-size: 1.2rem;
-  }
+}
 
-  .centric-card img {
-    max-width: 100% !important;
-    height: auto;
-  }
-  
-  .centric-card .card {
-    position: relative;
-    height: 40vh;
-    width: 40vh;
-    cursor: pointer;
-    box-shadow: none;
-    overflow: hidden;
-    background-color: transparent;
-  }
-  
-  @media only screen and (max-width: 570px) {
-    .centric.ps {
-      padding-left: 20%;
-    }
-  
-    .centric .pe {
-      padding-right: 10%;
-    }
-  
-    .centric .sticky-text {
-      height: 330%;
-    }
-  
-    .centric h1 {
-      font-size: 1.3rem;
-      line-height: 0.8cm;
-    }
-  
-    .centric .sticky-text h1,
-    .light .sticky-text h1,
-    .technology .sticky-text h1 {
-      font-size: 1.3rem;
-      top: 12%;
-    }
-  }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-    scale: 1.2;
-  }
-  
-  .card .focus {
-    position: absolute;
-    z-index: 1;
-    top: 15px;
-    width: 80%;
-  }
+.card img {
+  max-width: 100%;
+  height: auto;
+  scale: 1.2;
+}
 
-  .card .converse {
-    position: absolute;
-    z-index: 1;
-    top: 40px;
-    width: 80%;
-  }
-  
-  .card .celebrate {
-    position: absolute;
-    z-index: 1;
-    top: 40px;
-    width: 80%;
-  }
- 
-  .centric .conclusion{
-    font-size: 30px;
-    color: #2C2F32;
-    padding-bottom: 100px;
-  }
+.card .focus {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 80%;
+}
 
-  .centric i {
-    color: #ff6d2f;
-    font-size: 35px;
-  }
+.card .converse {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
 
-  .centric p span{
-    color: #ff6d2d;
-    font-weight: 600;
-  }
+.card .celebrate {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
 
-  /*----- Horizontal Line-------*/
+.centric .conclusion {
+  font-size: 30px;
+  color: #2c2f32;
+  padding-bottom: 100px;
+}
 
-.line hr{
+.centric i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.centric p span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+/*----- Horizontal Line-------*/
+
+.line hr {
   width: 70%;
   background: black;
   position: relative;
@@ -221,12 +221,12 @@ html{
   border-radius: 50px;
   height: 5px;
   margin-bottom: 50px;
-  color: #2C2F32;
+  color: #2c2f32;
 }
 
 /*----- light and sustainability-----*/
 
-.light h4 span{
+.light h4 span {
   color: #ff6d2d;
   font-weight: 600;
 }
@@ -259,7 +259,7 @@ html{
   font-weight: 600;
 }
 
-.light .sticky-text{
+.light .sticky-text {
   position: absolute;
   overflow: visible;
   height: 460%;
@@ -280,12 +280,12 @@ html{
 }
 
 .light-card p {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
 .light-card ul {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
@@ -350,21 +350,21 @@ html{
   width: 80%;
 }
 
-.card .cash{
+.card .cash {
   position: absolute;
   z-index: 1;
   top: 40px;
   width: 80%;
 }
 
-.card .community{
+.card .community {
   position: absolute;
   z-index: 1;
   top: 40px;
   width: 80%;
 }
 
-.card .diverse{
+.card .diverse {
   position: absolute;
   z-index: 1;
   top: 40px;
@@ -376,15 +376,14 @@ html{
   font-size: 35px;
 }
 
-.light p span{
+.light p span {
   color: #ff6d2d;
   font-weight: 600;
 }
 
-
 /*---- Light and Technology----*/
 
-.technology h4 span{
+.technology h4 span {
   color: #ff6d2d;
   font-weight: 600;
 }
@@ -417,7 +416,7 @@ html{
   font-weight: 600;
 }
 
-.technology .sticky-text{
+.technology .sticky-text {
   position: absolute;
   overflow: visible;
   height: 200%;
@@ -438,12 +437,12 @@ html{
 }
 
 .technology-card p {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
 .technology-card ul {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
@@ -514,11 +513,10 @@ html{
   font-size: 35px;
 }
 
-.technology p span{
+.technology p span {
   color: #ff6d2d;
   font-weight: 600;
 }
-
 /* FOOTER  */
 
 /* upper-footer   */
@@ -534,17 +532,26 @@ html{
   font-size: 30px;
 }
 .upper-section-footer .text-start {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .upper-section-footer .upper-text h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+}
+.text {
+  font-size: 0.8rem;
 }
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .upper-section-footer .upper-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 0.8rem;
   }
 }
 /* lower-footer */
@@ -558,14 +565,33 @@ html{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px;
+  padding: 100px 100px 10px 100px;
 }
 .lower-container .text-row .row ul {
   list-style: none;
 }
+
+.lower-container .text-row .row ul {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
+}
 .lower-container .text-row .row ul li {
   padding: 10px;
   color: #8b9199;
+}
+.start-form input,
+.start-form textarea {
+  background-color: #2c2f32;
 }
 
 .lower-container .image-row {
@@ -581,4 +607,24 @@ html{
 .lower-container .image-row p {
   font-weight: 600;
   color: white;
+}
+
+.start-form input {
+  width: 18rem;
+}
+.start-form textarea {
+  resize: none;
+  width: 83%;
+  border-style: inset;
+  border-width: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form textarea {
+    resize: none;
+    width: 79%;
+  }
 }
