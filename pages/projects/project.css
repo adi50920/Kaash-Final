@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+
 * {
   box-shadow: none;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
+
 /* header section */
 #header {
   transition: all 0.5s;
@@ -33,6 +37,68 @@
   #header.header-scrolled {
     padding: 15px 0;
   }
+}
+
+ /* The sidepanel menu */
+ .sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #F2F2F2; 
+  overflow-x: hidden; 
+  padding-top: 24px; 
+  transition: 0.5s; 
+}
+
+.sidepanel .logo img {
+  padding: 15px 0px;
+  margin: 0;
+  max-height: 40px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #2C2F32;
+  display: block;
+  transition:   0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.side h3{
+  color: #FF6D2F;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.closebtn{
+  border: none;
+  padding: 0px 100px;
+}
+
+@media (max-width: 768px) {
+  .closebtn {
+    padding: 0px 0px;
+  }
+}
+
+.side{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* top-background  */
@@ -76,7 +142,7 @@
 }
 
 .main .sticky-text {
-  height: 1280%;
+  height: 1225%;
 }
 .main .arrow {
   margin-left: -4rem;
@@ -108,7 +174,7 @@
 }
 @media only screen and (max-width: 500px) {
   .main .sticky-text {
-    height: 900%;
+    height: 935%;
   }
 }
 .specific p {
@@ -131,8 +197,18 @@
     font-size: 0.8rem;
   }
   .main .sticky-text {
-    left: 3vw;
+    left: 11vw;
   }
+}
+
+.tech i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.tech p span{
+  color: #ff6d2d;
+  font-weight: 600;
 }
 /* FOOTER  */
 

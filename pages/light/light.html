@@ -38,60 +38,79 @@
     <!-- CSS link-->
     <link rel="stylesheet" href="../../pages/light/light.css" />
     <title>LIGHT</title>
+    <!--js link-->
+    <script type="text/javascript" src="../../javascript/javscript.js"></script>
   </head>
   <body>
+    <!-- header-->
     <header id="header" class="fixed-top header-transparent">
       <div class="container d-flex">
         <div class="logo">
-          <a href="/pages/home/index.html">
-            <img src="/images/logo.png" alt="" class="img-fluid" />
+          <a href="../../pages/home/index.html">
+            <img src="../../images/logo.png" alt="" class="img-fluid" />
           </a>
         </div>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle d-flex align-items-center hidden-arrow"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img src="/images/menu-icon.svg" alt="" />
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <img onclick="openNav()" src="../../images/menu-icon.svg" alt="">
+        </div>
+        <div id="mysidepanel" class="sidepanel">
+          <div class="container logo">
+            <a href="../../pages/home/index.html">
+              <img src="../../images/logo.png" alt="" class="img-fluid" />
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item text-dark" href="talk.html">TALK</a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-dark"
-                  href="/pages/about/about.html"
-                >
-                  ABOUT
-                </a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-dark"
-                  href="/pages/light/light.html"
-                >
-                  LIGHT
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+          <div class="container navbar-nav ms-auto mb-2 mb-lg-0">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <div class="side row row-cols-1 row-cols-md-3 g-4" style="background-color: #f2f2f2;">
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/talk/talk.html"><h3 class="card-title">TALK</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#centric">Human centric design</a></center><br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#light">Sustainability</a></center><br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#technology">Technology</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/about/about.html"><h3 class="card-title">ABOUT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/about/about.html#company">Company</a></center><br/><br/><br/>
+                  <center><a href="../../pages/about/about.html#possibilities">Possibilities</a></center><br/><br/><br/>
+                  <center><a href="../../pages/about/about.html#services">Services</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/light/light.html"><h3 class="card-title">LIGHT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/concepts/concepts.html">Concepts</a></center><br/><br/><br/>
+                  <center><a href="../../pages/light-school/light-school.html">Light school</a></center><br/><br/><br/>
+                  <center><a href="../../pages/projects/project.html">Projects</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
       </div>
     </header>
     <!-- head-sction -->
     <section>
       <div class="light-head background-tint">
         <div class="light-nav d-flex align-items-center justify-content-between">
-            <a href="/pages/concepts/concepts.html">Concepts</a>
+            <a href="../../pages/concepts/concepts.html">Concepts</a>
 
-            <a href="/pages/light-school/light-school.html">Light School</a>
-           <a href="/pages/projects/project.html">Projects</a>
+            <a href="../../pages/light-school/light-school.html">Light School</a>
+           <a href="../../pages/projects/project.html">Projects</a>
           </ul>
         </div>
       </div>
@@ -115,7 +134,7 @@
                 Our unbuilt imaginations to express our creativity and passion
                 for thoughtful light planning.
               </p>
-              <a href="/pages/concepts/concepts.html">
+              <a href="../../pages/concepts/concepts.html">
                 <i class="fa-solid arrow fa-arrow-right"></i>
               </a>
             </div>
@@ -130,7 +149,7 @@
                   Sharing our knowledge with your curious benjamin. Always open
                   to talk more.
                 </p>
-                <a href="/pages/light-school/light-school.html">
+                <a href="../../pages/light-school/light-school.html">
                   <i class="fa-solid arrow fa-arrow-right"></i>
                 </a>
               </div>
@@ -145,7 +164,7 @@
                 Our little bedtime stories for you to feel more confident and
                 comfortable with our work.
               </p>
-              <a href="/pages/projects/project.html">
+              <a href="../../pages/projects/project.html">
                 <i class="fa-solid arrow fa-arrow-right"></i>
               </a>
             </div>
@@ -233,64 +252,64 @@
         <div class="text-row">
           <div class="row">
             <ul>
-              <a href="/pages/home/index.html#hero">
+              <a href="../../pages/home/index.html#hero">
                 <li>Kaash</li>
               </a>
-              <a  href="/pages/talk/talk.html">
+              <a  href="../../pages/talk/talk.html">
                 <li style="padding: 13px;">Talk</li>
               </a>
-              <a href="/pages/about/about.html">
+              <a href="../../pages/about/about.html">
                 <li style="padding: 13px;">About</li>
               </a>
-              <a href="/pages/light/light.html">
+              <a href="../../pages/light/light.html">
                 <li>Light</li>
               </a>
             </ul>
           </div>
           <div class="row">
             <ul>
-              <a href="/pages/talk/talk.html#human-centric">
+              <a href="../../pages/talk/talk.html#centric">
                 <li style="padding: 5px;">Human-centric design</li>
               </a>
-              <a href="/pages/talk/talk.html#light-sustainability">
+              <a href="../../pages/talk/talk.html#light">
                 <li>Sustainability</li>
               </a>
-              <a href="/pages/talk/talk.html#light-technology">
+              <a href="../../pages/talk/talk.html#technology">
                 <li>Technology</li>
               </a>
-              <a href="/pages/talk/talk.html#processes-1">
+              <a href="../../pages/talk/talk.html#processes">
                 <li>Processes</li>
               </a>
             </ul>
           </div>
           <div class="row">
             <ul>
-              <a href="/pages/light-school/light-school.html">
+              <a href="../../pages/light-school/light-school.html">
                 <li>Light school</li>
               </a>
-              <a href="/pages/concepts/concepts.html">
+              <a href="../../pages/concepts/concepts.html">
                 <li >Concepts</li>
               </a>
-              <a href="/pages/projects/project.html">
+              <a href="../../pages/projects/project.html">
                 <li >Projects</li>
               </a>
-              <a href="/pages/light-school/light-school.html">
+              <a href="../../pages/light-school/light-school.html">
                 <li>Trainings</li>
               </a>
             </ul>
           </div>
           <div class="row">
             <ul>
-              <a href="/pages/about/about.html">
+              <a href="../../pages/about/about.html">
                 <li>History</li>
               </a>
-              <a href="/pages/about/about.html">  
+              <a href="../../pages/about/about.html">  
                 <li>Company</li>
               </a>
-              <a href="/pages/about/about.html">
+              <a href="../../pages/about/about.html">
                 <li>Partners</li>
               </a>
-              <a href="/pages/about/about.html">
+              <a href="../../pages/about/about.html">
                 <li>Careers</li>
               </a>
             </ul>

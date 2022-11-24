@@ -6,6 +6,7 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
 /* header section */
 #header {
   transition: all 0.5s;
@@ -37,6 +38,70 @@
     padding: 15px 0;
   }
 }
+
+ /* The sidepanel menu */
+ .sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #F2F2F2; 
+  overflow-x: hidden; 
+  padding-top: 24px; 
+  transition: 0.5s; 
+}
+
+.sidepanel .logo img {
+  padding: 15px 0px;
+  margin: 0;
+  max-height: 40px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #2C2F32;
+  display: block;
+  transition:   0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.side h3{
+  color: #FF6D2F;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.closebtn{
+  border: none;
+  padding: 0px 100px;
+}
+
+@media (max-width: 768px) {
+  .closebtn {
+    padding: 0px 0px;
+  }
+}
+
+.side{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
 /* top section  */
 
 .background {
@@ -408,3 +473,4 @@
     width: 79%;
   }
 }
+

@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+
 * {
   box-shadow: none;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -235,7 +238,7 @@ html {
       font-size: 25px;
     }
   }
-}
+
 
   .tech i {
     color: #ff6d2f;
@@ -248,7 +251,6 @@ html {
   }
   
 
-/* FOOTER  */
 /* FOOTER  */
 
 /* upper-footer   */

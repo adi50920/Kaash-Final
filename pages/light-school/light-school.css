@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+
 * {
   box-shadow: none;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -268,7 +271,7 @@ html {
     }
   
     .school .sticky-text {
-      height: 2425%;
+      height: 2415%;
     }
   
     .school h1 {
@@ -291,7 +294,7 @@ html {
       padding-right: 25%;
     }
   }
-}
+
 
 .card img {
   max-width: 100%;
@@ -306,6 +309,17 @@ html {
   left: 20px;
   width: 80%;
 }
+
+.tech i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.tech p span{
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
 
 /* FOOTER  */
 
@@ -322,17 +336,26 @@ html {
   font-size: 30px;
 }
 .upper-section-footer .text-start {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .upper-section-footer .upper-text h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+}
+.text {
+  font-size: 0.8rem;
 }
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .upper-section-footer .upper-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 0.8rem;
   }
 }
 /* lower-footer */
@@ -346,14 +369,33 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px;
+  padding: 100px 100px 10px 100px;
 }
 .lower-container .text-row .row ul {
   list-style: none;
 }
+
+.lower-container .text-row .row ul {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
+}
 .lower-container .text-row .row ul li {
   padding: 10px;
   color: #8b9199;
+}
+.start-form input,
+.start-form textarea {
+  background-color: #2c2f32;
 }
 
 .lower-container .image-row {
@@ -369,4 +411,24 @@ html {
 .lower-container .image-row p {
   font-weight: 600;
   color: white;
+}
+
+.start-form input {
+  width: 18rem;
+}
+.start-form textarea {
+  resize: none;
+  width: 83%;
+  border-style: inset;
+  border-width: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form textarea {
+    resize: none;
+    width: 79%;
+  }
 }
