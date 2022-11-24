@@ -7,11 +7,37 @@
 html{
     scroll-behavior: smooth;
 }
-  /* -------header section--------- */
-#header{
-    transition: all 0.5s;
-    z-index: 997;
-    transition: all 0.5s;
+
+/* header section */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 24px 0;
+}
+
+.heading-tech h1 {
+  font-size: 40px;
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  padding: 12px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  #header.header-scrolled {
+    padding: 15px 0;
+  }
 }
 
 /* --------INTRO-------- 
@@ -40,9 +66,14 @@ html{
     padding-top: 650px;
 } 
 
+#intro .light{
+  font-size: 1.8rem;
+}
+
 .arrow{
-    padding: 40px 50px;
+    padding: 40px 180px;
     background-color: #070808;
+    padding-bottom: 200px;
 }
 
 /*--- Light School----*/
@@ -52,11 +83,11 @@ html{
   }
   
   .school.ps {
-    padding-left: 13%;
+    padding-left: 25%;
   }
   
   .school.pe {
-    padding-right: 10%;
+    padding-right: 15%;
   }
   
   .school.py {
@@ -65,8 +96,9 @@ html{
   }
   
   .orange-text {
-    color: #ff6d2d;
+    color: #8b9199;
     font-weight: 600;
+    font-size: 2rem;
   }
   
   .school .sticky-text,
@@ -74,7 +106,7 @@ html{
     position: absolute;
     overflow: visible;
     height: 1020%;
-    left: 6vw;
+    left: 11vw;
   }
   
   .school .sticky-text h1,
