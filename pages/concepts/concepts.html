@@ -36,14 +36,71 @@
     />
     <!-- CSS link-->
     <link rel="stylesheet" href="concepts.css" />
+    <!--js link-->
+    <script type="text/javascript" src="../../javascript/javscript.js"></script>
   </head>
     <body>
       <!-- header-->
-      <header id="header">
-        <!--navbar-->
-  
-        <!--navbar end-->
-      </header>
+    <header id="header" class="fixed-top header-transparent">
+      <div class="container d-flex">
+        <div class="logo">
+          <a href="../../pages/home/index.html">
+            <img src="../../images/logo.png" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <img onclick="openNav()" src="../../images/menu-icon.svg" alt="">
+        </div>
+        <div id="mysidepanel" class="sidepanel">
+          <div class="container logo">
+            <a href="../../pages/home/index.html">
+              <img src="../../images/logo.png" alt="" class="img-fluid" />
+            </a>
+          </div>
+          <div class="container navbar-nav ms-auto mb-2 mb-lg-0">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <div class="side row row-cols-1 row-cols-md-3 g-4" style="background-color: #f2f2f2;">
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/talk/talk.html"><h3 class="card-title">TALK</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#centric">Human centric design</a></center><br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#light">Sustainability</a></center><br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#technology">Technology</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/about/about.html"><h3 class="card-title">ABOUT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="#">Company</a></center><br/><br/><br/>
+                  <center><a href="#">Possibilities</a></center><br/><br/><br/>
+                  <center><a href="#">Services</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/light/light.html"><h3 class="card-title">LIGHT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/concepts/concepts.html">Concepts</a></center><br/><br/><br/>
+                  <center><a href="../../pages/light-school/light-school.html">Light school</a></center><br/><br/><br/>
+                  <center><a href="../../pages/projects/project.html">Projects</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </header>
       <!-- Intro settings -->
       <!--Background image-->
       <section id="intro">
@@ -66,7 +123,7 @@
       <!--Intro end-->
       
       <div class="arrow">
-        <img src="/Kaash-Final/images/light-school/Arrow.png" alt=""/>
+        <img src="../../images/light-school/Arrow.png" alt=""/>
       </div>
 
       <!-- concepts-->
@@ -75,7 +132,7 @@
             <h1>Concepts</h1>
        </div>
        <!--church-->
-       <div class=" concepts-card padk d-flex flex-column flex-lg-row">
+       <div class="concepts-card padk d-flex flex-column flex-lg-row">
          <img class="img-fluid" src="../../images/concepts/church/main.png" alt="">
          <div class="text w-100 d-flex flex-column justify-content-end mt-4 mt-md-0 mx-lg-2">
            <p>Cathedral an der stad</p>
@@ -131,6 +188,8 @@
        <div class="container">
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
        </div>
        <!--private gallery-->
        <div class="concepts-card padk d-flex flex-column ">
@@ -157,6 +216,8 @@
        </div>
        <!-- private gallery end-->
        <div class="container">
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
        </div>
@@ -195,6 +256,8 @@
        </div>
        <!--mosque end-->
        <div class="container">
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
        </div>
@@ -295,6 +358,8 @@
        <div class="container">
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
        </div>
        <!-- dreams-->
        <div class="concepts-card padk d-flex flex-column flex-lg-row">
@@ -327,6 +392,8 @@
        </div>
        <!-- dreams end-->
        <div class="container">
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
         <br/><br/><br/><br/><br/>
        </div>
@@ -389,13 +456,25 @@
         <br/><br/><br/><br/><br/>
        </div>
 
-       <div class="last-text w-100 pad-x text w-100">
-        <p>Seeking solutions for your space</p>
-        <div class="d-flex justify-content-between">
-          <i class="fa-solid me-5 arrow fa-arrow-right"></i>
-          <a class="orange-text me-5 ms-md-5" href="">Talk to us</a>
+       <div class="tech container">
+        <div class="aligin-items-center justify-contents-between">
+          <div class="row d-sm-flex">
+            <div class="col-md-8">
+              <p style="color: #8B9199; font-size: 20px;">
+                Seeking solutions for your space
+              </p>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="col-md-4">
+              <br/>
+              <br/>
+              <p style="font-size: 20px; font-weight:400;">
+                <span>Talk to us</span>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>    
+      </div>  
       </div>
 
       <!-- concepts end-->
@@ -403,124 +482,121 @@
       <!-- upper-footer  -->
 
     <section class="upper-section-footer">
-        <div class="upper-container" style="padding: 10%;">
-          <div class="upper-container-main">
-            <div class="upper-text">
-              <h2 class="my-5" style="color: #ff6d2f; font-weight: 600;">
-                Light on your mind??
-              </h2>
-              <div class="d-flex w-100 align-items-end flex-column">
-                <div class="text-start">
-                  <p class="m-0" style="color: #f2f2f2;">
-                    We are always open for new collaborations.
-                  </p>
-                  <p>
-                    <span style="color: #ff6d2f;">
-                      Say Hi !!
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="upper-contact d-flex align-items-center"
-              style="margin: 8rem 0; font-size: 25px;"
-            >
-              <img
-                src="/kaash-Final/images/Footer/contact-us-5463949-4568180 1.png"
-                alt=""
-                class="me-4"
-              />
-              <div style="color: #f2f2f2;">
-                <p>+352 691 566 820</p>
-                <p>moien@kaash.eu</p>
+      <div class="upper-container" style="padding: 20%;">
+        <div class="upper-container-main">
+          <div class="upper-text">
+            <h2 class="my-5" style="color: #ff6d2f; font-weight: 600;">
+              Light on your mind??
+            </h2>
+            <div class="d-flex w-100 align-items-end flex-column">
+              <div class="text-start">
+                <p class="m-0" style="color: #8b9199; font-weight: 300;">
+                  We are always open for new collaborations.
+                </p>
                 <p>
-                  41a rue des romains 8041, Luxembourg
+                  <span style="color: #ff6d2f; font-weight: 600;">
+                    Say Hi !!
+                  </span>
                 </p>
               </div>
             </div>
-            <div class="upper-form d-flex align-items-center justify-content-end">
-              <img
-                src="/kaash-Final/images/Footer/letter-5314533-4440388 1.png"
-                alt=""
-                class="me-0 me-md-5 d-none d-md-block"
-              />
-              <div class="start-form">
-                <div class="d-flex flex-column" style="color: #f2f2f2;">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <label for="name">Name</label>
-                    <input type="text" class="my-1 ms-3" />
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between">
-                    <label for="name">Email</label>
-                    <input type="text" class="my-1 ms-3" />
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between">
-                    <label for="name">Contact</label>
-                    <input type="text" class="my-1 ms-3" />
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between">
-                    <label for="name">
-                      Contact
-                    </label>
-                    <textarea
-                      class="my-1"
-                      rows="3"
-                      style="resize: none; width: 74%;"
-                    ></textarea>
-                  </div>
+          </div>
+          <div
+            class="upper-contact label d-flex align-items-center"
+            style="margin: 8rem 0;"
+          >
+            <img
+              src="../../images/Footer/contact-us-5463949-4568180 1.png"
+              alt=""
+              class="me-4"
+            />
+            <div style="color: #8b9199;">
+              <p style="margin-bottom: 0;">+352 691 566 820</p>
+              <p style="margin-bottom: 0;">moien@kaash.eu</p>
+              <p style="margin-bottom: 0;">
+                41a rue des romains 8041, Luxembourg
+              </p>
+            </div>
+          </div>
+          <div class="upper-form d-flex align-items-center justify-content-end">
+            <img
+              src="../../images/Footer/letter-5314533-4440388 1.png"
+              alt=""
+              class="me-0 d-none d-md-block"
+            />
+            <div class="start-form">
+              <div class="d-flex w-100 flex-column" style="color: #8b9199;">
+                <div class="d-flex align-items-center justify-content-between">
+                  <label class="text" for="name">Name</label>
+                  <input type="text" class="my-1 ms-3" />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <label class="text" for="name">Email</label>
+                  <input type="text" class="my-1 ms-3" />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <label class="text" for="name">Contact</label>
+                  <input type="text" class="my-1 ms-3" />
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <label class="text" for="name">
+                    Message
+                  </label>
+                  <textarea class="my-1" rows="3"></textarea>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-  
-      <!-- lower footer  -->
-  
-      <section>
-        <div class="lower-container">
-          <div class="text-row">
-            <div class="row">
-              <ul>
-                <li>Kaash</li>
-                <li>Talk</li>
-                <li>More</li>
-                <li>Light</li>
-              </ul>
-            </div>
-            <div class="row">
-              <ul>
-                <li>History</li>
-                <li>Expertise</li>
-                <li>Commercials</li>
-                <li>Light science</li>
-              </ul>
-            </div>
-            <div class="row">
-              <ul>
-                <li>HCL</li>
-                <li>Sustainability</li>
-                <li>Technology</li>
-                <li>Design cycle</li>
-              </ul>
-            </div>
-            <div class="row">
-              <ul>
-                <li>Light school</li>
-                <li>Concepts</li>
-                <li>Projects</li>
-                <li>Trainings</li>
-              </ul>
-            </div>
+      </div>
+    </section>
+
+    <!-- lower footer  -->
+
+    <section>
+      <div class="lower-container">
+        <div class="text-row">
+          <div class="row">
+            <ul>
+              <li>Expertise</li>
+              <li>Talk</li>
+              <li>More</li>
+              <li>Light</li>
+            </ul>
           </div>
-          <div class="image-row">
-            <img src="/kaash-Final/images/Footer/image 41.png" alt="" />
-            <p>K A A S H</p>
-            <img src="/kaash-Final/images/Footer/Luxembourg White 2.png" alt="" />
+          <div class="row">
+            <ul>
+              <li>HCL</li>
+              <li>Sustainability</li>
+              <li>Technology</li>
+              <li>Processes</li>
+            </ul>
+          </div>
+          <div class="row">
+            <ul>
+              <li>Light school</li>
+              <li>Concepts</li>
+              <li>Projects</li>
+              <li>Trainings</li>
+            </ul>
+          </div>
+          <div class="row">
+            <ul>
+              <li>History</li>
+              <li>Company</li>
+              <li>Partners</li>
+              <li>Careers</li>
+            </ul>
           </div>
         </div>
-      </section>
+   <div class="image-row" style="padding: 0 10%;">
+          <p style="margin-top: 20px;">K A A S H</p>
+          <img src="../../images/Footer/image 41.png" alt="" />
+          <img src="../../images/Footer/Luxembourg White 2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
 
       <!--Bootstrap JS-->
       <script

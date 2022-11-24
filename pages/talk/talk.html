@@ -36,42 +36,88 @@
     />
     <!-- CSS link-->
     <link rel="stylesheet" href="talk.css" />
+    <!--js link-->
+    <script type="text/javascript" src="../../javascript/javscript.js"></script>
   </head>
   <body>
     <!-- header-->
-    <header id="header">
-      <!--navbar-->
-
-      <!--navbar end-->
-    </header>
-    <!-- Intro settings -->
-    <!--Background image-->
-    <section id="intro">
-      <div class="p-5 bg-image" 
-        style="background-image: url('hero/talk-hero.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        ">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="d-sm-flex aligin-items-center" style="height: 350px;">
-            <div class="text">
-              <h1 class="mb-3">Let's talk about light</h1>
-              <p class="mb-4">Light planning principles:
-                <ul>
-                  <li>SUSTAINABILITY</li>
-                  <li>HUMAN-CENTRIC LIGHT</li>
-                  <li>TECHNOLOGY</li>
-                </ul>
-              </p>
-            </div>
+    <header id="header" class="fixed-top header-transparent">
+      <div class="container d-flex">
+        <div class="logo">
+          <a href="../../pages/home/index.html">
+            <img src="../../images/logo.png" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <img onclick="openNav()" src="../../images/menu-icon.svg" alt="">
+        </div>
+        <div id="mysidepanel" class="sidepanel">
+          <div class="container logo">
+            <a href="../../pages/home/index.html">
+              <img src="../../images/logo.png" alt="" class="img-fluid" />
+            </a>
           </div>
+          <div class="container navbar-nav ms-auto mb-2 mb-lg-0">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <div class="side row row-cols-1 row-cols-md-3 g-4" style="background-color: #f2f2f2;">
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/talk/talk.html"><h3 class="card-title">TALK</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="#centric">Human centric design</a></center><br/><br/><br/>
+                  <center><a href="#light">Sustainability</a></center><br/><br/><br/>
+                  <center><a href="#technology">Technology</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/about/about.html"><h3 class="card-title">ABOUT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="#">Company</a></center><br/><br/><br/>
+                  <center><a href="#">Possibilities</a></center><br/><br/><br/>
+                  <center><a href="#">Services</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/light/light.html"><h3 class="card-title">LIGHT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/concepts/concepts.html">Concepts</a></center><br/><br/><br/>
+                  <center><a href="../../pages/light-school/light-school.html">Light school</a></center><br/><br/><br/>
+                  <center><a href="../../pages/projects/project.html">Projects</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
-    </section>
-    <!--Intro end-->
+    </header>
+    <!-- Intro settings -->
+    <div class="background">
+      <p>Let's talk about light</p>
+    </div>
+    <div class="text-background">
+      <div class="text1">
+        <p>Light planning principles</p>
+      </div>
+      <div class="text2">
+        <p>Human-centric design</p><br/>
+        <p>Sustainability</p><br/>
+        <p>Technology</p><br/>
+      </div>
+    </div>
 
     <!--Human-centric Design-->
-    <div class="centric ps pe py">
+    <div id="centric" class="centric ps pe py">
       <div class="sticky-text">
        <h1>Human-centric Design</h1>
       </div>
@@ -89,7 +135,7 @@
           <div id="card-centric" class="card container-fluid">
             <img
             id="focus"
-            src="/Kaash-Final/images/talk/human-centric light/focus/focus.png"
+            src="../../images/talk/human-centric light/focus/focus.png"
             class="focus support-hidden"
             alt=""
             />
@@ -121,7 +167,7 @@
           <div id="card-centric" class="card container-fluid">
             <img
             id="converse"
-            src="/kaash-Final/images/talk/human-centric light/converse/converse.png"
+            src="../../images/talk/human-centric light/converse/converse.png"
             class="converse support-hidden"
             alt=""
           />
@@ -134,7 +180,7 @@
           <div id="card-centric" class="card container-fluid">
           <img
             id="celebrate"
-            src="/kaash-Final/images/talk/human-centric light/celebrate/celebrate.png"
+            src="../../images/talk/human-centric light/celebrate/celebrate.png"
             class="celebrate support-hidden"
             alt=""
           />
@@ -171,11 +217,9 @@
               <p style="color: #8B9199; font-size: 20px;">
                 Find your perfect light
               </p>
-              <br/>
               <i class="fa-solid fa-arrow-right"></i>
             </div>
             <div class="col-md-4">
-              <br/>
               <br/>
               <br/>
               <p style="font-size: 20px; font-weight:400;">
@@ -194,7 +238,7 @@
     </div>
 
     <!--light and sustainability-->
-    <div class="light ps pe py">
+    <div id="light" class="light ps pe py">
       <div class="sticky-text">
        <h1>Light and Sustainability</h1>
       </div>
@@ -215,7 +259,7 @@
           <div id="card-light" class="card container-fluid">
             <img
             id="pollution"
-            src="/Kaash-Final/images/talk/light and sustainability/light pollution/light-pollution.png"
+            src="../../images/talk/light and sustainability/light pollution/light-pollution.png"
             class="pollution support-hidden"
             alt=""
             />
@@ -242,7 +286,7 @@
           <div id="card-light" class="card container-fluid">
             <img
             id="carbon"
-            src="/kaash-Final/images/talk/light and sustainability/light carbon/light-carbon.png"
+            src="../../images/talk/light and sustainability/light carbon/light-carbon.png"
             class="carbon support-hidden"
             alt=""
           />
@@ -255,7 +299,7 @@
           <div id="card-light" class="card container-fluid">
           <img
             id="imbalance"
-            src="/kaash-Final/images/talk/light and sustainability/eco balance/ecological-imbalance.png"
+            src="../../images/talk/light and sustainability/eco balance/ecological-imbalance.png"
             class="imbalance support-hidden"
             alt=""
           />
@@ -274,7 +318,7 @@
       </div>
       
       <div class="light" style="font-size: 30px;">
-        <h1 style="font-weight: 600;"><span>Sustainable light planning</span></h1>
+        <h1 style="font-weight: 600;"><span1>Sustainable light planning</span1></h1>
         <p style="color: #2C2F32;">
           provides a greenfield of <br/>
           opportunities to reduce light carbon<br/> 
@@ -289,7 +333,7 @@
           <div id="card-light" class="card container-fluid">
             <img
             id="cash"
-            src="/Kaash-Final/images/talk/sustainability development/increased cash flow/cash.png"
+            src="../../images/talk/sustainability development/increased cash flow/cash.png"
             class="cash support-hidden"
             alt=""
             />
@@ -319,7 +363,7 @@
           <div id="card-light" class="card container-fluid">
             <img
             id="community"
-            src="/kaash-Final/images/talk/sustainability development/health community/community.png"
+            src="../../images/talk/sustainability development/health community/community.png"
             class="community support-hidden"
             alt=""
           />
@@ -332,7 +376,7 @@
           <div id="card-light" class="card container-fluid">
           <img
             id="diverse"
-            src="/kaash-Final/images/talk/sustainability development/diverse ecosystem/diverse.png"
+            src="../../images/talk/sustainability development/diverse ecosystem/diverse.png"
             class="diverse support-hidden"
             alt=""
           />
@@ -355,11 +399,9 @@
               <p style="color: #8B9199; font-size: 20px;">
                 Create a healthier planet
               </p>
-              <br/>
               <i class="fa-solid fa-arrow-right"></i>
             </div>
             <div class="col-md-4">
-              <br/>
               <br/>
               <br/>
               <p style="font-size: 20px; font-weight:400;">
@@ -379,7 +421,7 @@
 
     <!-- Light Technology-->
 
-    <div class="technology ps pe py">
+    <div id="technology" class="technology ps pe py">
       <div class="sticky-text">
        <h1>Light and Technology</h1>
       </div>
@@ -394,7 +436,7 @@
           <div id="card-technology" class="card container-fluid">
             <img
             id="data"
-            src="/Kaash-Final/images/talk/light and technology/bigdata/1.png"
+            src="../../images/talk/light and technology/bigdata/1.png"
             class="data support-hidden"
             alt=""
             />
@@ -422,7 +464,7 @@
           <div id="card-technology" class="card container-fluid">
             <img
             id="informed"
-            src="/kaash-Final/images/talk/light and technology/informed decisions/1.png"
+            src="../../images/talk/light and technology/informed decisions/1.png"
             class="informed support-hidden"
             alt=""
           />
@@ -435,7 +477,7 @@
           <div id="card-technology" class="card container-fluid">
           <img
             id="society"
-            src="/kaash-Final/images/talk/light and technology/connected society/2.png"
+            src="../../images/talk/light and technology/connected society/2.png"
             class="society support-hidden"
             alt=""
           />
@@ -458,11 +500,9 @@
               <p style="color: #8B9199; font-size: 20px;">
                 Let's build a smarter ecosystem
               </p>
-              <br/>
               <i class="fa-solid fa-arrow-right"></i>
             </div>
             <div class="col-md-4">
-              <br/>
               <br/>
               <br/>
               <p style="font-size: 20px; font-weight:400;">
@@ -479,7 +519,7 @@
     <!-- upper-footer  -->
 
     <section class="upper-section-footer">
-      <div class="upper-container" style="padding: 10%;">
+      <div class="upper-container" style="padding: 20%;">
         <div class="upper-container-main">
           <div class="upper-text">
             <h2 class="my-5" style="color: #ff6d2f; font-weight: 600;">
@@ -487,11 +527,11 @@
             </h2>
             <div class="d-flex w-100 align-items-end flex-column">
               <div class="text-start">
-                <p class="m-0" style="color: #f2f2f2;">
+                <p class="m-0" style="color: #8b9199; font-weight: 300;">
                   We are always open for new collaborations.
                 </p>
                 <p>
-                  <span style="color: #ff6d2f;">
+                  <span style="color: #ff6d2f; font-weight: 600;">
                     Say Hi !!
                   </span>
                 </p>
@@ -499,51 +539,47 @@
             </div>
           </div>
           <div
-            class="upper-contact d-flex align-items-center"
-            style="margin: 8rem 0; font-size: 25px;"
+            class="upper-contact label d-flex align-items-center"
+            style="margin: 8rem 0;"
           >
             <img
-              src="/kaash-Final/images/Footer/contact-us-5463949-4568180 1.png"
+              src="../../images/Footer/contact-us-5463949-4568180 1.png"
               alt=""
               class="me-4"
             />
-            <div style="color: #f2f2f2;">
-              <p>+352 691 566 820</p>
-              <p>moien@kaash.eu</p>
-              <p>
+            <div style="color: #8b9199;">
+              <p style="margin-bottom: 0;">+352 691 566 820</p>
+              <p style="margin-bottom: 0;">moien@kaash.eu</p>
+              <p style="margin-bottom: 0;">
                 41a rue des romains 8041, Luxembourg
               </p>
             </div>
           </div>
           <div class="upper-form d-flex align-items-center justify-content-end">
             <img
-              src="/kaash-Final/images/Footer/letter-5314533-4440388 1.png"
+              src="../../images/Footer/letter-5314533-4440388 1.png"
               alt=""
-              class="me-0 me-md-5 d-none d-md-block"
+              class="me-0 d-none d-md-block"
             />
             <div class="start-form">
-              <div class="d-flex flex-column" style="color: #f2f2f2;">
+              <div class="d-flex w-100 flex-column" style="color: #8b9199;">
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Name</label>
+                  <label class="text" for="name">Name</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Email</label>
+                  <label class="text" for="name">Email</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Contact</label>
+                  <label class="text" for="name">Contact</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">
-                    Contact
+                  <label class="text" for="name">
+                    Message
                   </label>
-                  <textarea
-                    class="my-1"
-                    rows="3"
-                    style="resize: none; width: 74%;"
-                  ></textarea>
+                  <textarea class="my-1" rows="3"></textarea>
                 </div>
               </div>
             </div>
@@ -559,7 +595,7 @@
         <div class="text-row">
           <div class="row">
             <ul>
-              <li>Kaash</li>
+              <li>Expertise</li>
               <li>Talk</li>
               <li>More</li>
               <li>Light</li>
@@ -567,18 +603,10 @@
           </div>
           <div class="row">
             <ul>
-              <li>History</li>
-              <li>Expertise</li>
-              <li>Commercials</li>
-              <li>Light science</li>
-            </ul>
-          </div>
-          <div class="row">
-            <ul>
               <li>HCL</li>
               <li>Sustainability</li>
               <li>Technology</li>
-              <li>Design cycle</li>
+              <li>Processes</li>
             </ul>
           </div>
           <div class="row">
@@ -589,11 +617,19 @@
               <li>Trainings</li>
             </ul>
           </div>
+          <div class="row">
+            <ul>
+              <li>History</li>
+              <li>Company</li>
+              <li>Partners</li>
+              <li>Careers</li>
+            </ul>
+          </div>
         </div>
-        <div class="image-row">
-          <img src="/kaash-Final/images/Footer/image 41.png" alt="" />
-          <p>K A A S H</p>
-          <img src="/kaash-Final/images/Footer/Luxembourg White 2.png" alt="" />
+   <div class="image-row" style="padding: 0 10%;">
+          <p style="margin-top: 20px;">K A A S H</p>
+          <img src="../../images/Footer/image 41.png" alt="" />
+          <img src="../../images/Footer/Luxembourg White 2.png" alt="" />
         </div>
       </div>
     </section>

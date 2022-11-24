@@ -36,6 +36,8 @@
     />
     <!-- CSS link-->
     <link rel="stylesheet" href="light-school.css" />
+    <!--js link-->
+    <script type="text/javascript" src="../../javascript/javscript.js"></script>
   </head>
   <body>
     <!-- header-->
@@ -43,45 +45,61 @@
     <header id="header" class="fixed-top header-transparent">
       <div class="container d-flex">
         <div class="logo">
-          <a href="/pages/home/index.html">
+          <a href="../../pages/home/index.html">
             <img src="../../images/logo.png" alt="" class="img-fluid" />
           </a>
         </div>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle d-flex align-items-center hidden-arrow"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img src="../../images/menu-icon.svg" alt="" />
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <img onclick="openNav()" src="../../images/menu-icon.svg" alt="">
+        </div>
+        <div id="mysidepanel" class="sidepanel">
+          <div class="container logo">
+            <a href="../../pages/home/index.html">
+              <img src="../../images/logo.png" alt="" class="img-fluid" />
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item text-dark" href="talk.html">TALK</a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-dark"
-                  href="/pages/about/about.html"
-                >
-                  ABOUT
-                </a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-dark"
-                  href="/pages/light/light.html"
-                >
-                  LIGHT
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+          <div class="container navbar-nav ms-auto mb-2 mb-lg-0">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <div class="side row row-cols-1 row-cols-md-3 g-4" style="background-color: #f2f2f2;">
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/talk/talk.html"><h3 class="card-title">TALK</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#centric">Human centric design</a></center><br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#light">Sustainability</a></center><br/><br/><br/>
+                  <center><a href="../../pages/talk/talk.html#technology">Technology</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/about/about.html"><h3 class="card-title">ABOUT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="#">Company</a></center><br/><br/><br/>
+                  <center><a href="#">Possibilities</a></center><br/><br/><br/>
+                  <center><a href="#">Services</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-center justify-content-between">
+                <div class="container">
+                  <center><a href="../../pages/light/light.html"><h3 class="card-title">LIGHT</h3></a></center>
+                  <br/><br/><br/>
+                  <center><a href="../../pages/concepts/concepts.html">Concepts</a></center><br/><br/><br/>
+                  <center><a href="../../pages/light-school/light-school.html">Light school</a></center><br/><br/><br/>
+                  <center><a href="../../pages/projects/project.html">Projects</a></center><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
       </div>
     </header>
     <!-- Intro settings -->
@@ -106,7 +124,7 @@
     <!--Intro end-->
 
     <div class="arrow">
-        <img src="/Kaash-Final/images/light-school/Arrow.png" alt=""/>
+        <img src="../../images/light-school/Arrow.png" alt=""/>
     </div>
 
     <!--Light School-->
@@ -114,83 +132,85 @@
       <div class="sticky-text">
        <h1>Light School</h1>
       </div>
-      
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 2;">
-          <div id="card-school" class="card container-fluid">
-            <img
-            id="image"
-            src="/Kaash-Final/images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-            />
-          </div>
-        </div>
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-6">
           <h2><span class="orange-text">LEDs</span></h2>
             <p>Since their invention in 1942, LEDs have evolved to be become powerful and versatile light source to meet the challenging needs of present world. These semiconductors though simple to use, are technical instruments of modern engineering, driven by an array of technical factors to ensure durability in their use. Lumen maintenance, color rendition or damage factors are few nuances to consider while evaluation an optimal solution for your project. At Kaash, we follow a rigourous technical evaluation to ensure an ideal solution for your project. Let's build your project with light.
             </p>
             <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <div class="col-md-5">
+          <div id="card-school" class="card container-fluid">
+            <img
+            id="image"
+            src="../../images/light-school/image 43.png"
+            class="image support-hidden"
+            alt=""
+            />
+          </div>
+        </div>
       </div>
       <br/>
       <br/>
-      <div class="school-card d-flex flex-column flex-lg-row-reverse">
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-4">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="../../images/light-school/museums/1.png" alt="" style="width: 100%;">
+            </div>
+            <div class="mySlides fade">
+              <img src="../../images/light-school/museums/2.png" alt="" style="width: 100%;">
+            </div>
+            <div class="mySlides fade">
+              <img src="../../images/light-school/museums/3.png" alt="" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
           <h2><span class="orange-text">Museums & Galleries</span></h2>
           <p>Every artwork is unique, more so for the inspiration behind and its presentation style. Light for art is about finding the perfect balance to enhance colours, textures and depth, be it art on canvas or green marble sculpture. Like artists, collectors have their own interpretations on how art should be viewed; this is well achieved with the help of specific light strategies. Using light and colour to differentiate subject from background create a visual hierarchy guiding eye's movement. Carefully designed patterns and arrangement of lighting helps draw attention to the special elements. Moreover, lighting systems for museums and galleries require flexibility in light control, beam distribution or even colour temperatures. Realising true colours and ensuring safety while dealing with delicate subjects is a priority, along with high-quality light source ensuring best colour rendering index (CRI) and minimum damage factor is essential for any work of art at display. 
           </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
-        <div style="order: 2;">
-          <div id="card-school" class="card container-fluid">
-            <img
-            id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
-          </div>
-        </div>
       </div>
 
       <br/>
       <br/>
 
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 2;">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
-          </div>
-        </div>
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-7">
           <h2><span class="orange-text">Buildings & Heritage</span></h2>
           <p>For several centuries, the ancient castles, forts, administrative buildings, as well as contemporary architecture have lived as noble embodiments of a society's ever-evolving ideals, beliefs, cultures, and values. These structures serve as living relics of the past and also provide a glimpse into the future of today's civilization. Due to the fact that they are often visited by tourists and contribute to the economy of the nation, it is of foremost relevance to provide them with a distinct persona when it is night time. Light, as the fourth dimension of architecture, offers enormous value to these structures by illuminating them. It is possible to utilize light to enhance the architectural subtleties, the grandiosity of the structure, the depth and the textures of the materials. Technical metrics like as ingress protection (IP rating), weight load (IK rating), and temperature coefficient offer a fair assessment for monuments subjected to repeated exposure to adverse weather conditions.
           </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
-      </div>
-
-      <br/>
-      <br/>
-
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 1;">
+        <div class="col-md-4">
           <div id="card-school" class="card container-fluid">
           <img
             id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
+            src="../../images/light-school/image 43.png"
             class="image support-hidden"
             alt=""
           />
           </div>
         </div>
-        <div style="order: 2;">
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-4">
+          <div id="card-school" class="card container-fluid">
+          <img
+            id="image"
+            src="../../images/light-school/leisure.png"
+            class="image support-hidden"
+            alt=""
+          />
+          </div>
+        </div>
+        <div class="col-md-7">
           <h2><span class="orange-text">Leisure</span></h2>
           <p>From seasoned connoisseurs to first-time visitors, people enjoy the immersive experiences of latest design trends and culture at various hotels and lodges. The gradual progression from the exterior to the lobby, and further into restaurants to the guest rooms creates multiples touchpoints for visitors. The interplay of light in these areas sets a unique experience. Intelligent light planning accentuates the details while ambient complement the architectural style, from ancient to contemporary. It is pretty much essential that the along with design of lights the effect too in terms of size and quality creates a rich comforting ambiance. It is possible to generate a wide range of different lighting settings based on the time of day or activities. Moreover, consistent LED colour is essential for consistent results.
           </p>
@@ -201,40 +221,40 @@
       <br/>
       <br/>
 
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 2;">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
-          </div>
-        </div>
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-7">
           <h2><span class="orange-text">Urbanscape</span></h2>
           <p>The urban landscape is undergoing fast change, presenting city planners with new challenges in creating a unified environment for public life. Lighting plays an important role in bringing people together at night by providing a safe and comfortable illuminated environment for children to play and adults to socialise. In addition to its function as an aid to navigation, it promotes economic activity by making it easier for restaurants and retailers to do better business. At the same time, Light pollution is a rising issue in the urban environment, in the form of unwanted light, which may be addressed with the use of intelligent lighting solutions and smarter designs.
           </p>
           <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="col-md-4">
+          <div id="card-school" class="card container-fluid">
+          <img
+            id="image"
+            src="../../images/light-school/image 43.png"
+            class="image support-hidden"
+            alt=""
+          />
+          </div>
         </div>
       </div>
 
       <br/>
       <br/>
 
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-5">
           <div id="card-school" class="card container-fluid">
           <img
             id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
+            src="../../images/light-school/office.png"
             class="image support-hidden"
             alt=""
           />
           </div>
         </div>
-        <div style="order: 2;">
+        <div class="col-md-7">
           <h2><span class="orange-text">Offices</span></h2>
           <p>Attractive, engaging, and dynamic work environments are in high demand. Such new concepts need flexible dynamic lighting to support function and its architecture. With harmonical balance of natural and artifical lighting, we can create human centric spaces, which inspire people and help them focus better. Smart technologies of IOTs, daylight harvesting and occupancy control can generate upto 50% energy savings over traditional practices along with realistic feedback about employee engagement. This helps building managers to implement positive actions, creating healthier and productive spaces.
           </p>
@@ -245,41 +265,41 @@
       <br/>
       <br/>
 
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 2;">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
-          </div>
-        </div>
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-7">
           <h2><span class="orange-text">Shop</span></h2>
           <p>
             Fashion boutiques and commodity outlets showcase a brand's image and craftsmanship. Keeping up with ever-increasing popularity of e-commerce, there is a new challenge in engaging customers. Dynamic displays and personalized lighting driven with AI can lead to desirable businesses. Lighting is also an immersive tool to draw attention and spark curiosity. Technical yet intuitive lighting with good colour rendering (CRI) display true colours and precision create drama, both being crucial elements for an immersive experience. Play of temperatures and color may result in some absolutely breath-taking environments. In contrast to the popular perception that brighter lighting should be preferred in retail locations, effective lighting solutions rather focus on generating hierarchy in displays with precise, high-quality beams of light.
           </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
-      </div>
-
-      <br/>
-      <br/>
-
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 1;">
+        <div class="col-md-4">
           <div id="card-school" class="card container-fluid">
           <img
             id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
+            src="../../images/light-school/coffee.png"
             class="image support-hidden"
             alt=""
           />
           </div>
         </div>
-        <div style="order: 2;">
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-4">
+          <div id="card-school" class="card container-fluid">
+          <img
+            id="image"
+            src="../../images/light-school/image 43.png"
+            class="image support-hidden"
+            alt=""
+          />
+          </div>
+        </div>
+        <div class="col-md-7">
           <h2><span class="orange-text">Houses and Apartments</span></h2>
           <p>Our house is indeed an impression of our life, personality and family. These living spaces are packed with recollections and aspirations, portrayed iwhich portrayed in the form of photographs, artefacts, furnitures and finishes. When layered with personalized light planning, these dream spaces somes to life in their unique style. Thoughtful designs and technology allows us to enjoy same space for different purpose, from intimate family time to hosting friends. Light can make your house more personal.     
           </p>
@@ -290,40 +310,40 @@
       <br/>
       <br/>
 
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 2;">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
-          </div>
-        </div>
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-7">
           <h2><span class="orange-text">Sports</span></h2>
           <p>Sports with it's ever growing popularity demand more bigger and better infrastructre. Night  facilities are increasingly used for competitions and training as urbanization grows. Well designed lighting begins with minimal glare for players and maximum comfort for spectators. Controls and sensors, allow easy monitoring and efficient maintenance of facility. With dynamic designs, light can support celebrations and events for special occasions.     
           </p>
           <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="col-md-4">
+          <div id="card-school" class="card container-fluid">
+          <img
+            id="image"
+            src="../../images/light-school/image 43.png"
+            class="image support-hidden"
+            alt=""
+          />
+          </div>
         </div>
       </div>
 
       <br/>
       <br/>
 
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 1;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-4">
           <div id="card-school" class="card container-fluid">
           <img
             id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
+            src="../../images/light-school/travel.png"
             class="image support-hidden"
             alt=""
           />
           </div>
         </div>
-        <div style="order: 2;">
+        <div class="col-md-7">
           <h2><span class="orange-text">Transport hubs</span></h2>
           <p>Airports, train stations and bus terminals connect cities and bring people closer. Fast transport have reduced the distance and created a cohesive ecosystem. Keeping these enormous structures lit is a major task for the authorities, given their size and the fact that they are always in use. Efforts are made to create a welcoming but efficient environment for travellers to rest, shop and eat. When it comes to illuminating a building's interior and exterior features, nothing beats high-performance human centric lighting. Lighting solutions that have a long life and need the least amount of maintenance are the optimal choice for these applications.     
           </p>
@@ -333,41 +353,22 @@
 
       <br/>
       <br/>
-
-      <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order:2;">
+      <div class="school-card row row-cols-1 row-cols-md-2 g-4">
+        <div class="col-md-7"></div>
+        <div class="col-md-4">
           <div id="card-school" class="card container-fluid">
           <img
+            style="top: 50%;"
             id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
+            src="../../images/light-school/industries.png"
             class="image support-hidden"
             alt=""
           />
           </div>
-        </div>
-        <div style="order: 1;">
-          <h2><span class="orange-text">Clubs & Events</span></h2>
-          <p>Discotheques, night clubs and concerts are imperative avenues for people to unwind, relax and party after their busy work schedules. People prefer to lose their inhibitions and celebrate life in the moment. Lighting for these places demands sophisticated glamorous approach with projection mapping, motor heads and music synchronisation. These locations do not adhere to any specific blueprint for lighting; rather, they rely on the passion and ingenuity of their curators who work to create a magical environment with the help of unique lighting strategies.    
-          </p>
-          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
-
-      <br/>
-      <br/>
-
       <div class="school-card d-flex flex-column flex-lg-row">
-        <div style="order: 1;">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="/kaash-Final/images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
-          </div>
-        </div>
-        <div style="order: 2;">
+        <div>
           <h2><span class="orange-text">Industries</span></h2>
           <p>A vibrant economy relies on manufacturing and logistics facilities as solid cornerstones. They must be stronger, smarter, and faster, given the rapidly evolving customer behaviour and consumption. A happier, healthier, and more productive workforce is the first step in achieving these unified reforms; lighting makes quite a significant impact in this regard. Besides enhancing the efficiency and productivity of workplace, it is also possible to reduce the likelihood of workplace accidents by implementing an effective light design that makes use of adequate amounts of natural light while also minimizing glare and using volumetric illumination. Innovative technologies of integrated lighting technology may enable facility managers gather intuitive data about the use of space, staff behaviour, light fitting performance, and their servicing schedules so that efficient and cost-effective decisions are taken. Industrial light instruments must satisfy vital parameters of robust contraction, long-lasting lumen maintenance, and activity-compliant engineerings of clean room and fire safety.  
           </p>
@@ -379,10 +380,12 @@
       <br/>
    
     </div>
+    
+
     <!-- upper-footer  -->
 
     <section class="upper-section-footer">
-      <div class="upper-container" style="padding: 10%;">
+      <div class="upper-container" style="padding: 20%;">
         <div class="upper-container-main">
           <div class="upper-text">
             <h2 class="my-5" style="color: #ff6d2f; font-weight: 600;">
@@ -390,11 +393,11 @@
             </h2>
             <div class="d-flex w-100 align-items-end flex-column">
               <div class="text-start">
-                <p class="m-0" style="color: #f2f2f2;">
+                <p class="m-0" style="color: #8b9199; font-weight: 300;">
                   We are always open for new collaborations.
                 </p>
                 <p>
-                  <span style="color: #ff6d2f;">
+                  <span style="color: #ff6d2f; font-weight: 600;">
                     Say Hi !!
                   </span>
                 </p>
@@ -402,51 +405,47 @@
             </div>
           </div>
           <div
-            class="upper-contact d-flex align-items-center"
-            style="margin: 8rem 0; font-size: 25px;"
+            class="upper-contact label d-flex align-items-center"
+            style="margin: 8rem 0;"
           >
             <img
-              src="/kaash-Final/images/Footer/contact-us-5463949-4568180 1.png"
+              src="../../images/Footer/contact-us-5463949-4568180 1.png"
               alt=""
               class="me-4"
             />
-            <div style="color: #f2f2f2;">
-              <p>+352 691 566 820</p>
-              <p>moien@kaash.eu</p>
-              <p>
+            <div style="color: #8b9199;">
+              <p style="margin-bottom: 0;">+352 691 566 820</p>
+              <p style="margin-bottom: 0;">moien@kaash.eu</p>
+              <p style="margin-bottom: 0;">
                 41a rue des romains 8041, Luxembourg
               </p>
             </div>
           </div>
           <div class="upper-form d-flex align-items-center justify-content-end">
             <img
-              src="/kaash-Final/images/Footer/letter-5314533-4440388 1.png"
+              src="../../images/Footer/letter-5314533-4440388 1.png"
               alt=""
-              class="me-0 me-md-5 d-none d-md-block"
+              class="me-0 d-none d-md-block"
             />
             <div class="start-form">
-              <div class="d-flex flex-column" style="color: #f2f2f2;">
+              <div class="d-flex w-100 flex-column" style="color: #8b9199;">
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Name</label>
+                  <label class="text" for="name">Name</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Email</label>
+                  <label class="text" for="name">Email</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">Contact</label>
+                  <label class="text" for="name">Contact</label>
                   <input type="text" class="my-1 ms-3" />
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                  <label for="name">
-                    Contact
+                  <label class="text" for="name">
+                    Message
                   </label>
-                  <textarea
-                    class="my-1"
-                    rows="3"
-                    style="resize: none; width: 74%;"
-                  ></textarea>
+                  <textarea class="my-1" rows="3"></textarea>
                 </div>
               </div>
             </div>
@@ -462,7 +461,7 @@
         <div class="text-row">
           <div class="row">
             <ul>
-              <li>Kaash</li>
+              <li>Expertise</li>
               <li>Talk</li>
               <li>More</li>
               <li>Light</li>
@@ -470,18 +469,10 @@
           </div>
           <div class="row">
             <ul>
-              <li>History</li>
-              <li>Expertise</li>
-              <li>Commercials</li>
-              <li>Light science</li>
-            </ul>
-          </div>
-          <div class="row">
-            <ul>
               <li>HCL</li>
               <li>Sustainability</li>
               <li>Technology</li>
-              <li>Design cycle</li>
+              <li>Processes</li>
             </ul>
           </div>
           <div class="row">
@@ -492,11 +483,19 @@
               <li>Trainings</li>
             </ul>
           </div>
+          <div class="row">
+            <ul>
+              <li>History</li>
+              <li>Company</li>
+              <li>Partners</li>
+              <li>Careers</li>
+            </ul>
+          </div>
         </div>
-        <div class="image-row">
-          <img src="/kaash-Final/images/Footer/image 41.png" alt="" />
-          <p>K A A S H</p>
-          <img src="/kaash-Final/images/Footer/Luxembourg White 2.png" alt="" />
+   <div class="image-row" style="padding: 0 10%;">
+          <p style="margin-top: 20px;">K A A S H</p>
+          <img src="../../images/Footer/image 41.png" alt="" />
+          <img src="../../images/Footer/Luxembourg White 2.png" alt="" />
         </div>
       </div>
     </section>
@@ -504,7 +503,28 @@
 
 
       
-
+    <!--slide show js-->
+    
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].className = slides[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+  }
+  </script>
     
     <!--Bootstrap JS-->
     <script

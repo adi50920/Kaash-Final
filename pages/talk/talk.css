@@ -7,56 +7,176 @@
 html{
     scroll-behavior: smooth;
 }
-  /* -------header section--------- */
-#header{
-    transition: all 0.5s;
-    z-index: 997;
-    transition: all 0.5s;
+
+/* header section */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 24px 0;
 }
 
-/* --------INTRO-------- 
-
-/* Default height for small devices */
-@media only screen and (max-width: 570px) {
-    #intro .bg-image{
-        height: 100vh;
-    }
-}
-#intro .bg-image{
-    height: 100vh;
+.heading-tech h1 {
+  font-size: 40px;
 }
 
-/* Height for devices larger than 992px */
-@media (min-width: 992px) {
-    #intro .bgimage{
-      height: 100vh;
-    }
-} 
-
-.bg-image h1{
-    color: #ff4d00;
-    font-size: 60px;
-    padding: 220px 300px;
-    padding-bottom: 0px;
-} 
-
-.bg-image p{
-    font-size: 30px;
-    font-weight: 600;
-    padding-left: 300px;
-    padding-bottom: 300px;
-    padding-top: 190px ;
-    padding-bottom: 0px;
-    color: #8B9199;
+#header.header-transparent {
+  background: transparent;
 }
+
+#header.header-scrolled {
+  padding: 12px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  #header.header-scrolled {
+    padding: 15px 0;
+  }
+}
+
+ /* The sidepanel menu */
+ .sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #F2F2F2; 
+  overflow-x: hidden; 
+  padding-top: 24px; 
+  transition: 0.5s; 
+}
+
+.sidepanel .logo img {
+  padding: 15px 0px;
+  margin: 0;
+  max-height: 40px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #2C2F32;
+  display: block;
+  transition:   0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.side h3{
+  color: #FF6D2F;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.closebtn{
+  border: none;
+  padding: 0px 100px;
+}
+
+@media (max-width: 768px) {
+  .closebtn {
+    padding: 0px 0px;
+  }
+}
+
+.side{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+/* --------INTRO-------- */
+
+.background {
+  background: url(../../pages/talk/hero/talk-hero.jpg);
+  background-color:  rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+.background p {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  right: 20%;
+  font-size: 56px;
+  line-height: 90px;
+  font-weight: bold;
+  color: #FF6D2F;
+}
+
+@media only screen and (max-width: 700px) {
+  .background p {
+    font-size:2rem;
+  }
   
-.bg-image ul{
-    font-size: 25px;
-    font-weight: 400;
-    padding-left: 300px;
-    padding-top: 10px;
-    color: #8B9199;
+  .background {
+    background-position: center;
+  }
 }
+
+.text-background {
+  background-color: #070808;
+  padding: 10% 15% 15% 15%;
+}
+
+.text-background p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #8b9199;
+}
+
+.text-background .text2 {
+  margin-left: 20%;
+  margin-top: 8%;
+}
+
+@media only screen and (max-width: 1059px) {
+  .text-background .text1 {
+    margin-right: 10%;
+  }
+  .text-background p {
+    font-size: 2rem;
+  }
+  .text-background .text2 {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .text-background .text1 {
+    margin-right: 0%;
+  }
+  .text-background p {
+    font-size: 1.2rem;
+  }
+  .text-background .text2 {
+    margin-left: 0%;
+  }
+}
+
 
 /*--- Human-Centric Design----*/
 
@@ -65,11 +185,11 @@ html{
   }
   
   .centric.ps {
-    padding-left: 30%;
+    padding-left: 20%;
   }
   
   .centric.pe {
-    padding-right: 10%;
+    padding-right: 15%;
   }
   
   .centric.py {
@@ -82,9 +202,13 @@ html{
     line-height: 1.2cm;
   }
   
-  .centric h1 span,
-  .orange-text {
+  .centric h1 span{
     color: #ff6d2d;
+    font-weight: 600;
+  }
+
+  .centric .orange-text {
+    color: #8B9199; 
     font-weight: 600;
   }
   
@@ -93,7 +217,7 @@ html{
     position: absolute;
     overflow: visible;
     height: 220%;
-    left: 6vw;
+    left: 11vw;
   }
   
   .centric .sticky-text h1,
@@ -111,7 +235,7 @@ html{
   .centric .centric-card {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 8rem 0;
   }
@@ -124,6 +248,8 @@ html{
   .centric-card p {
     color: #8B9199;
     font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .centric-card img {
@@ -143,15 +269,15 @@ html{
   
   @media only screen and (max-width: 570px) {
     .centric.ps {
-      padding-left: 20%;
+      padding-left: 25%;
     }
   
     .centric .pe {
-      padding-right: 10%;
+      padding-right: 15%;
     }
   
     .centric .sticky-text {
-      height: 330%;
+      height: 375%;
     }
   
     .centric h1 {
@@ -164,6 +290,14 @@ html{
     .technology .sticky-text h1 {
       font-size: 1.3rem;
       top: 12%;
+    }
+    
+    .card img {
+      max-width: 100%;
+      height: auto;
+      scale: 0.2;
+      padding-left: 10%;
+      padding-right: 10%;
     }
   }
   
@@ -195,8 +329,8 @@ html{
   }
  
   .centric .conclusion{
-    font-size: 30px;
-    color: #2C2F32;
+    font-size: 2rem;
+    color: #8B9199;
     padding-bottom: 100px;
   }
 
@@ -217,6 +351,7 @@ html{
   background: black;
   position: relative;
   top: 20px;
+  left: 10%;
   border: none;
   border-radius: 50px;
   height: 5px;
@@ -236,11 +371,11 @@ html{
 }
 
 .light.ps {
-  padding-left: 30%;
+  padding-left: 20%;
 }
 
 .light.pe {
-  padding-right: 10%;
+  padding-right: 15%;
 }
 
 .light.py {
@@ -253,17 +388,27 @@ html{
   line-height: 1.2cm;
 }
 
-.light h1 span,
-.orange-text {
+.light h1 span{
   color: #ff6d2d;
   font-weight: 600;
 }
+
+.light h1 span1{
+  color: #2C2F32;
+  font-weight: 600;
+}
+
+.light .orange-text {
+  color: #8B9199; 
+  font-weight: 600;
+}
+
 
 .light .sticky-text{
   position: absolute;
   overflow: visible;
   height: 460%;
-  left: 6vw;
+  left: 11vw;
 }
 
 .light .light-card {
@@ -306,15 +451,15 @@ html{
 
 @media only screen and (max-width: 570px) {
   .light.ps {
-    padding-left: 20%;
+    padding-left: 25%;
   }
 
   .light .pe {
-    padding-right: 10%;
+    padding-right: 15%;
   }
 
   .light .sticky-text {
-    height: 720%;
+    height: 725%;
   }
 
   .light h1 {
@@ -394,11 +539,11 @@ html{
 }
 
 .technology.ps {
-  padding-left: 30%;
+  padding-left: 20%;
 }
 
 .technology.pe {
-  padding-right: 10%;
+  padding-right: 15%;
 }
 
 .technology.py {
@@ -421,7 +566,7 @@ html{
   position: absolute;
   overflow: visible;
   height: 200%;
-  left: 6vw;
+  left: 11vw;
 }
 
 .technology .technology-card {
@@ -464,15 +609,15 @@ html{
 
 @media only screen and (max-width: 570px) {
   .technology.ps {
-    padding-left: 20%;
+    padding-left: 25%;
   }
 
   .technology .pe {
-    padding-right: 10%;
+    padding-right: 15%;
   }
 
   .technology .sticky-text {
-    height: 220%;
+    height: 350%;
   }
 
   .technology h1 {
@@ -504,7 +649,8 @@ html{
 .card .society {
   position: absolute;
   z-index: 1;
-  top: 40px;
+  top: 30px;
+  left: 15%;
   width: 80%;
   padding-left: 10px;
 }
@@ -534,17 +680,26 @@ html{
   font-size: 30px;
 }
 .upper-section-footer .text-start {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .upper-section-footer .upper-text h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+}
+.text {
+  font-size: 0.8rem;
 }
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .upper-section-footer .upper-text h2 {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 0.8rem;
   }
 }
 /* lower-footer */
@@ -558,7 +713,7 @@ html{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px;
+  padding: 100px 100px 10px 100px;
 }
 .lower-container .text-row .row ul {
   list-style: none;
@@ -566,6 +721,10 @@ html{
 .lower-container .text-row .row ul li {
   padding: 10px;
   color: #8b9199;
+}
+.start-form input,
+.start-form textarea {
+  background-color: #2c2f32;
 }
 
 .lower-container .image-row {
@@ -581,4 +740,24 @@ html{
 .lower-container .image-row p {
   font-weight: 600;
   color: white;
+}
+
+.start-form input {
+  width: 18rem;
+}
+.start-form textarea {
+  resize: none;
+  width: 83%;
+  border-style: inset;
+  border-width: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form textarea {
+    resize: none;
+    width: 79%;
+  }
 }
