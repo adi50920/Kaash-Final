@@ -1,11 +1,11 @@
-*{
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* header section */
@@ -300,19 +300,20 @@ html{
       padding-right: 10%;
     }
   }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-    scale: 1.2;
-  }
-  
-  .card .focus {
-    position: absolute;
-    z-index: 1;
-    top: 15px;
-    width: 80%;
-  }
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  scale: 1.2;
+}
+
+.card .focus {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 80%;
+}
 
   .card .converse {
     position: absolute;
@@ -334,19 +335,19 @@ html{
     padding-bottom: 100px;
   }
 
-  .centric i {
-    color: #ff6d2f;
-    font-size: 35px;
-  }
+.centric i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
 
-  .centric p span{
-    color: #ff6d2d;
-    font-weight: 600;
-  }
+.centric p span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
 
-  /*----- Horizontal Line-------*/
+/*----- Horizontal Line-------*/
 
-.line hr{
+.line hr {
   width: 70%;
   background: black;
   position: relative;
@@ -356,12 +357,12 @@ html{
   border-radius: 50px;
   height: 5px;
   margin-bottom: 50px;
-  color: #2C2F32;
+  color: #2c2f32;
 }
 
 /*----- light and sustainability-----*/
 
-.light h4 span{
+.light h4 span {
   color: #ff6d2d;
   font-weight: 600;
 }
@@ -425,12 +426,12 @@ html{
 }
 
 .light-card p {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
 .light-card ul {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
@@ -495,21 +496,21 @@ html{
   width: 80%;
 }
 
-.card .cash{
+.card .cash {
   position: absolute;
   z-index: 1;
   top: 40px;
   width: 80%;
 }
 
-.card .community{
+.card .community {
   position: absolute;
   z-index: 1;
   top: 40px;
   width: 80%;
 }
 
-.card .diverse{
+.card .diverse {
   position: absolute;
   z-index: 1;
   top: 40px;
@@ -521,15 +522,14 @@ html{
   font-size: 35px;
 }
 
-.light p span{
+.light p span {
   color: #ff6d2d;
   font-weight: 600;
 }
 
-
 /*---- Light and Technology----*/
 
-.technology h4 span{
+.technology h4 span {
   color: #ff6d2d;
   font-weight: 600;
 }
@@ -562,7 +562,7 @@ html{
   font-weight: 600;
 }
 
-.technology .sticky-text{
+.technology .sticky-text {
   position: absolute;
   overflow: visible;
   height: 200%;
@@ -583,12 +583,12 @@ html{
 }
 
 .technology-card p {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
 .technology-card ul {
-  color: #8B9199;
+  color: #8b9199;
   font-size: 1.2rem;
 }
 
@@ -660,11 +660,10 @@ html{
   font-size: 35px;
 }
 
-.technology p span{
+.technology p span {
   color: #ff6d2d;
   font-weight: 600;
 }
-
 /* FOOTER  */
 
 /* upper-footer   */
@@ -717,6 +716,21 @@ html{
 }
 .lower-container .text-row .row ul {
   list-style: none;
+}
+
+.lower-container .text-row .row ul {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
 }
 .lower-container .text-row .row ul li {
   padding: 10px;

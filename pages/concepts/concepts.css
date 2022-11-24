@@ -1,11 +1,11 @@
-*{
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* header section */
@@ -107,20 +107,20 @@ html{
 
 /* Default height for small devices */
 @media only screen and (max-width: 570px) {
-    #intro .bg-image{
-        height: 100vh;
-    }
-}
-#intro .bg-image{
+  #intro .bg-image {
     height: 100vh;
+  }
+}
+#intro .bg-image {
+  height: 100vh;
 }
 
 /* Height for devices larger than 992px */
 @media (min-width: 992px) {
-    #intro .bgimage{
-      height: 100vh;
-    }
-} 
+  #intro .bgimage {
+    height: 100vh;
+  }
+}
 
 .bg-image p{
     color: #8B9199;
@@ -146,8 +146,8 @@ html{
 
 /* Concepts */
 
-.concepts{
-    background-color: #070808;
+.concepts {
+  background-color: #070808;
 }
 
 .concepts.ps {
@@ -181,14 +181,13 @@ html{
     font-size: 35px;
   }
 
-  .card-img-top {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    }
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
 
-  
-.concepts .sticky-text{
+.concepts .sticky-text {
   position: absolute;
   overflow: visible;
   left: 11vw;
@@ -236,6 +235,7 @@ html{
       font-size: 25px;
     }
   }
+}
 
   .tech i {
     color: #ff6d2f;
@@ -248,6 +248,7 @@ html{
   }
   
 
+/* FOOTER  */
 /* FOOTER  */
 
 /* upper-footer   */
@@ -300,6 +301,21 @@ html{
 }
 .lower-container .text-row .row ul {
   list-style: none;
+}
+
+.lower-container .text-row .row ul {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
 }
 .lower-container .text-row .row ul li {
   padding: 10px;
