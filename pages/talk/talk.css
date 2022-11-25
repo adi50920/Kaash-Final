@@ -81,6 +81,12 @@ html {
   margin-left: 50px;
 }
 
+@media (max-width: 768px) {
+  .sidepanel .hidden-mobile{
+    display: none;
+  }
+}
+
 .side h3{
   color: #FF6D2F;
   font-size: 2rem;

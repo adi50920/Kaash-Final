@@ -53,6 +53,12 @@
   transition: 0.5s; 
 }
 
+@media (max-width: 768px) {
+  .sidepanel .hidden-mobile{
+    display: none;
+  }
+}
+
 .sidepanel .logo img {
   padding: 15px 0px;
   margin: 0;

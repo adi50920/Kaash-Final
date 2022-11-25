@@ -63,6 +63,12 @@ html {
   max-height: 40px;
 }
 
+@media (max-width: 768px) {
+  .sidepanel .hidden-mobile{
+    display: none;
+  }
+}
+
 /* The sidepanel links */
 .sidepanel a {
   text-decoration: none;
