@@ -155,17 +155,11 @@
       <br/>
       <br/>
       <div class="school-card row row-cols-1 row-cols-md-2 g-4">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="../../images/light-school/museums/1.png" alt="" style="width: 100%;">
-            </div>
-            <div class="mySlides fade">
-              <img src="../../images/light-school/museums/2.png" alt="" style="width: 100%;">
-            </div>
-            <div class="mySlides fade">
-              <img src="../../images/light-school/museums/3.png" alt="" style="width: 100%;">
-            </div>
+            <img class="slideshow-img" src="../../images/light-school/museums/1.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/museums/2.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/museums/3.png" alt="">
           </div>
         </div>
         <div class="col-md-7">
@@ -201,14 +195,12 @@
           </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
-        <div class="col-md-4">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="../../images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
+        <div class="col-md-5">
+          <div class="slideshow-container">
+            <img class="slideshow-img" src="../../images/light-school/buildings/1.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/buildings/2.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/buildings/3.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/buildings/4.png" alt="">
           </div>
         </div>
       </div>
@@ -258,14 +250,12 @@
           </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
-        <div class="col-md-4">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="../../images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
+        <div class="col-md-5">
+          <div class="slideshow-container">
+            <img class="slideshow-img" src="../../images/light-school/urban/1.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/urban/2.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/urban/3.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/urban/4.png" alt="">
           </div>
         </div>
       </div>
@@ -329,14 +319,12 @@
       <br />
 
       <div class="school-card row row-cols-1 row-cols-md-2 g-4">
-        <div class="col-md-4">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="../../images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
+        <div class="col-md-5">
+          <div class="slideshow-container">
+            <img class="slideshow-img" src="../../images/light-school/houses/1.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/houses/2.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/houses/3.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/houses/4.png" alt="">
           </div>
         </div>
         <div class="col-md-7">
@@ -372,14 +360,12 @@
           </p>
           <i class="fa-solid fa-arrow-right"></i>
         </div>
-        <div class="col-md-4">
-          <div id="card-school" class="card container-fluid">
-          <img
-            id="image"
-            src="../../images/light-school/image 43.png"
-            class="image support-hidden"
-            alt=""
-          />
+        <div class="col-md-5">
+          <div class="slideshow-container">
+            <img class="slideshow-img" src="../../images/light-school/sports/1.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/sports/2.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/sports/3.png" alt="">
+            <img class="slideshow-img" src="../../images/light-school/sports/4.png" alt="">
           </div>
         </div>
       </div>
@@ -634,25 +620,21 @@
       
     <!--slide show js-->
     
-<script>
-  let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < slides.length; i++) {
-      slides[i].className = slides[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    slides[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2500); // Change image every 2 seconds
-  }
+  <script>
+    const slideshowImages = document.querySelectorAll(".slideshow-container .slideshow-img");
+
+    const nextImageDelay = 3000;
+    let currentImageCounter = 0;
+
+    slideshowImages[currentImageCounter].style.display = "block";
+
+    setInterval(nextImage, nextImageDelay);
+
+    function nextImage(){
+      slideshowImages[currentImageCounter].style.display = "none";
+      currentImageCounter = (currentImageCounter +1) % slideshowImages.length;
+      slideshowImages[currentImageCounter].style.display = "block";
+    }  
   </script>
     
     <!--Bootstrap JS-->
