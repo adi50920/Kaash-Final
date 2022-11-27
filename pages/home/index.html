@@ -72,9 +72,9 @@
                 <div class="container">
                   <center><a href="../../pages/talk/talk.html"><h3 class="card-title">TALK</h3></a></center>
                   <br/><br class="hidden-mobile" /><br class="hidden-mobile"/>
-                  <center><a class="hidden-mobile" href="../../pages/talk/talk.html#centric">Human centric design</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
-                  <center><a class="hidden-mobile" href="../../pages/talk/talk.html#light">Sustainability</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
-                  <center><a class="hidden-mobile" href="../../pages/talk/talk.html#technology">Technology</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/talk/talk.html#centric">Human centric design</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/talk/talk.html#light">Sustainability</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/talk/talk.html#technology">Technology</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
                 </div>
               </div>
             </div>
@@ -83,9 +83,9 @@
                 <div class="container">
                   <center><a href="../../pages/about/about.html"><h3 class="card-title">ABOUT</h3></a></center>
                   <br/><br class="hidden-mobile"/><br class="hidden-mobile"/>
-                  <center><a class="hidden-mobile" href="../../pages/about/about.html#company">Company</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
-                  <center><a class="hidden-mobile" href="../../pages/about/about.html#possibilities">Possibilities</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
-                  <center><a class="hidden-mobile" href="../../pages/about/about.html#services">Services</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/about/about.html#company">Company</a></center><br  class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/about/about.html#possibilities">Possibilities</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/about/about.html#services">Services</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
                 </div>
               </div>
             </div>
@@ -93,10 +93,10 @@
               <div class="align-items-center justify-content-between">
                 <div class="container">
                   <center><a href="../../pages/light/light.html"><h3 class="card-title">LIGHT</h3></a></center>
-                  <br/><br/><br/>
-                  <center><a class="hidden-mobile" href="../../pages/concepts/concepts.html">Concepts</a></center><br/><br/><br/>
-                  <center><a class="hidden-mobile" href="../../pages/light-school/light-school.html">Light school</a></center><br/><br/><br/>
-                  <center><a class="hidden-mobile" href="../../pages/projects/project.html">Projects</a></center><br/><br/><br/>
+                  <br/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/concepts/concepts.html">Concepts</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/light-school/light-school.html">Light school</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <center><a href="../../pages/projects/project.html">Projects</a></center><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
                 </div>
               </div>
             </div>
@@ -511,7 +511,60 @@
       </div>
     </section>
 
-        <!--Bootstrap JS-->
+    <!--cursor-->
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big ">
+        <svg height="40" width="40">
+          <circle cx="20" cy="20" r="20" stroke-width="0"></circle>
+        </svg>
+      </div>
+      
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!-- cursor script-->
+    <script>
+      const $bigBall = document.querySelector('.cursor__ball--big');
+      const $smallBall = document.querySelector('.cursor__ball--small');
+      const $hoverables = document.querySelectorAll('a','img','button');
+
+      // Listeners
+      document.body.addEventListener('mousemove', onMouseMove);
+      for (let i = 0; i < $hoverables.length; i++) {
+        $hoverables[i].addEventListener('mouseenter', onMouseHover);
+        $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+      }
+
+      // Move the cursor
+      function onMouseMove(e) {
+        TweenMax.to($bigBall, .4, {
+          x: e.pageX -15,
+          y: e.pageY -15
+        })
+        TweenMax.to($smallBall, .1, {
+          x: e.pageX - 5,
+          y: e.pageY - 7
+        })
+      }
+
+      // Hover an element
+      function onMouseHover() {
+        gsap.to($bigBall, .3, {
+          scale: 3
+        })
+      } 
+      function onMouseHoverOut() {
+        gsap.to($bigBall, .3, {
+          scale: 1
+        })
+      }
+    </script>
+
+    <!--Bootstrap JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -522,5 +575,11 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
     ></script>
+    <!-- Babel JS-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- TweenMax js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- gsap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
