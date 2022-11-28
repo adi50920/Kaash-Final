@@ -84,6 +84,8 @@ html {
   overflow-x: hidden; 
   padding-top: 24px; 
   transition: 0.5s; 
+  display: flex;
+  flex-direction: column;
 }
 
 .sidepanel .logo img {
@@ -91,6 +93,13 @@ html {
   margin: 0;
   max-height: 40px;
 }
+
+@media (max-width: 768px) {
+  .sidepanel a{
+    display: flex;
+  }
+}
+
 
 @media (max-width: 768px) {
   .sidepanel .hidden-mobile{

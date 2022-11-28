@@ -80,6 +80,8 @@
   overflow-x: hidden; 
   padding-top: 24px; 
   transition: 0.5s; 
+  display: flex;
+  flex-direction: column;
 }
 
 .sidepanel .logo img {
@@ -95,6 +97,12 @@
   color: #2C2F32;
   display: block;
   transition:   0.3s;
+}
+
+@media (max-width: 768px) {
+  .sidepanel a{
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
