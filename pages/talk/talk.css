@@ -161,22 +161,25 @@ html {
   background-position: center;
 }
 
-.background p {
+.background h2 {
   position: absolute;
   top: 25%;
   left: 20%;
   right: 20%;
-  font-size: 56px;
-  line-height: 90px;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: 600;
   color: #FF6D2F;
 }
 
-@media only screen and (max-width: 700px) {
-  .background p {
-    font-size:2rem;
+@media (max-width: 768px) {
+  #background h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
   }
-  
+}
+
+@media only screen and (max-width: 700px) {
   .background {
     background-position: center;
   }
@@ -246,6 +249,8 @@ html {
   .centric h1 {
     font-size: 2rem;
     line-height: 1.2cm;
+    font-weight: 300;
+    color: #2c2f32;
   }
   
   .centric h1 span{
@@ -312,6 +317,20 @@ html {
     overflow: hidden;
     background-color: transparent;
   }
+
+  .centric-card .mobile-hidden1,
+  .centric-card .mobile-hidden2,
+  .centric-card .mobile-hidden3{
+    width: 45%;
+  }
+  
+  @media (max-width: 768px){
+    .centric-card .mobile-hidden1,
+    .centric-card .mobile-hidden2,
+    .centric-card .mobile-hidden3{
+      width: auto;
+    }
+}
   
   @media only screen and (max-width: 570px) {
     .centric.ps {
@@ -337,7 +356,7 @@ html {
       font-size: 1.3rem;
       top: 12%;
     }
-    
+
     .card img {
       max-width: 100%;
       height: auto;
@@ -376,7 +395,7 @@ html {
   }
  
   .centric .conclusion{
-    font-size: 2rem;
+    font-size: 30px;
     color: #8B9199;
     padding-bottom: 100px;
   }
@@ -458,6 +477,19 @@ html {
   left: 11vw;
 }
 
+.light .light-card.ps {
+  padding-left: 25%;
+}
+
+.light .light-card .pe {
+  padding-right: 15%;
+}
+
+.light .light-card .py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
 .light .light-card {
   display: flex;
   width: 100%;
@@ -496,6 +528,18 @@ html {
   background-color: transparent;
 }
 
+.light-card .mobile-hidden{
+  width: 50%;
+}
+
+@media (max-width: 768px){
+  .light-card .mobile-hidden{
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+
 @media only screen and (max-width: 570px) {
   .light.ps {
     padding-left: 25%;
@@ -506,13 +550,26 @@ html {
   }
 
   .light .sticky-text {
-    height: 725%;
+    height: 810%;
   }
 
   .light h1 {
     font-size: 1.3rem;
     line-height: 0.8cm;
   }
+
+  .light .light-card.ps {
+  padding-left: 25%;
+}
+
+.light .light-card .pe {
+  padding-right: 15%;
+}
+
+.light .light-card .py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 }
 
 .card img {
@@ -616,7 +673,7 @@ html {
 .technology .sticky-text {
   position: absolute;
   overflow: visible;
-  height: 200%;
+  height: 270%;
   left: 11vw;
 }
 
@@ -631,11 +688,38 @@ html {
 .technology-card h2 {
   font-weight: 600;
   margin-bottom: 1.5rem;
+  width: auto;
 }
 
 .technology-card p {
   color: #8b9199;
   font-size: 1.2rem;
+}
+
+.technology-card.ps {
+  padding-left: 2%;
+}
+
+.technology-card.pe {
+  padding-right: 30%;
+}
+
+.technology-card.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.technology-card.ss {
+  padding-left: 35%;
+}
+
+.technology-card.se {
+  padding-right: 2%;
+}
+
+.technology-card.sy {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .technology-card ul {
@@ -658,6 +742,17 @@ html {
   background-color: transparent;
 }
 
+.technology-card .mobile-hidden{
+  width: 50%;
+}
+
+@media (max-width: 768px){
+  .technology-card .mobile-hidden{
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 570px) {
   .technology.ps {
     padding-left: 25%;
@@ -668,12 +763,25 @@ html {
   }
 
   .technology .sticky-text {
-    height: 350%;
+    height: 390%;
   }
 
   .technology h1 {
     font-size: 1.3rem;
     line-height: 0.8cm;
+  }
+
+  .technology-card.ps {
+    padding-left: 20%;
+  }
+  
+  .technology-card.pe {
+    padding-right: 15%;
+  }
+  
+  .technology-card.py {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 }
 

@@ -206,7 +206,7 @@ html {
   }
   
   .padk {
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
   }
   
   .concepts.py {
@@ -251,8 +251,9 @@ html {
 }
 
   .concepts .sticky-text {
-    height: 1460%;
+    height: 1330%;
   }
+
   @media only screen and (max-width: 1000px) {
     .concepts .sticky-text {
       height: 340%;
@@ -260,7 +261,7 @@ html {
   }
   @media only screen and (max-width: 500px) {
     .concepts .sticky-text {
-      height: 2060%;
+      height: 1935%;
     }
   }
   @media only screen and (max-width: 570px) {
