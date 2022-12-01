@@ -264,8 +264,8 @@ circle {
 }
 
 .solutions h1 {
-  font-size: 2rem;
-  line-height: 1.2cm;
+  font-size: 20px;
+  line-height: 1cm;
   font-weight: 300;
   color: #2c2f32;
 }
@@ -754,9 +754,19 @@ circle {
 .upper-contact p {
   font-size: 1.2rem;
 }
+
+.start-form .sub-but input {
+  border-style: outset;
+  border-width: 2px;
+  border-color: #767676 #212121 #767676 #767676;
+  margin-right: 9.4rem;
+}
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
     font-size: 0.8rem;
+  }
+  .start-form .sub-but input {
+    margin-right: 0rem;
   }
   .upper-section-footer .upper-text h2 {
     font-size: 1.2rem;
@@ -839,10 +849,13 @@ circle {
   .start-form input {
     width: 14rem;
   }
+  .start-form input {
+    width: 10rem;
+  }
 
   .start-form textarea {
     resize: none;
-    width: 79%;
+    width: 73%;
   }
 }
 /*

@@ -371,12 +371,28 @@ html {
 .text {
   font-size: 0.8rem;
 }
+.upper-contact p {
+  font-size: 1.2rem;
+}
+
+.start-form .sub-but input {
+  border-style: outset;
+  border-width: 2px;
+  border-color: #767676 #212121 #767676 #767676;
+  margin-right: 9.4rem;
+}
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
     font-size: 0.8rem;
   }
+  .start-form .sub-but input {
+    margin-right: 0rem;
+  }
   .upper-section-footer .upper-text h2 {
     font-size: 1.2rem;
+  }
+  .upper-contact p {
+    font-size: 0.8rem;
   }
   .text {
     font-size: 0.8rem;
@@ -393,14 +409,13 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px 100px 10px 100px;
+  padding: 3% 10% 3% 10%;
 }
 .lower-container .text-row .row ul {
   list-style: none;
 }
 
 .lower-container .text-row .row ul {
-  width: 120px;
   margin: auto;
   text-align: center;
   border: 1px solid black;
@@ -414,7 +429,7 @@ html {
   padding: 0px;
 }
 .lower-container .text-row .row ul li {
-  padding: 10px;
+  padding: 10px 0px;
   color: #8b9199;
 }
 .start-form input,
@@ -430,7 +445,7 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 30px;
+  margin: 0px;
 }
 .lower-container .image-row img {
   height: 34px;
@@ -454,8 +469,12 @@ html {
   .start-form input {
     width: 14rem;
   }
+  .start-form input {
+    width: 10rem;
+  }
+
   .start-form textarea {
     resize: none;
-    width: 79%;
+    width: 73%;
   }
 }

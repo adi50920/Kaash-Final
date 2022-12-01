@@ -164,7 +164,7 @@ html {
   right: 20%;
   font-size: 45px;
   font-weight: 600;
-  color: #FF6D2F;
+  color: #ff6d2f;
 }
 
 @media (max-width: 768px) {
@@ -225,33 +225,33 @@ html {
 /*--- Human-Centric Design----*/
 
 .centric {
-    background-color: #ffffff;
-  }
-  
-  .centric.ps {
-    padding-left: 20%;
-  }
-  
-  .centric.pe {
-    padding-right: 15%;
-  }
-  
-  .centric.py {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  
-  .centric h1 {
-    font-size: 2rem;
-    line-height: 1.2cm;
-    font-weight: 300;
-    color: #2c2f32;
-  }
-  
-  .centric h1 span{
-    color: #ff6d2d;
-    font-weight: 600;
-  }
+  background-color: #ffffff;
+}
+
+.centric.ps {
+  padding-left: 20%;
+}
+
+.centric.pe {
+  padding-right: 15%;
+}
+
+.centric.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.centric h1 {
+  font-size: 2rem;
+  line-height: 1.2cm;
+  font-weight: 300;
+  color: #2c2f32;
+}
+
+.centric h1 span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
 
 .centric .orange-text {
   color: #8b9199;
@@ -298,68 +298,68 @@ html {
   align-items: center;
 }
 
-  .centric-card img {
-    max-width: 100% !important;
-    height: auto;
-  }
-  
-  .centric-card .card {
-    position: relative;
-    height: 40vh;
-    width: 40vh;
-    cursor: pointer;
-    box-shadow: none;
-    overflow: hidden;
-    background-color: transparent;
-  }
+.centric-card img {
+  max-width: 100% !important;
+  height: auto;
+}
 
+.centric-card .card {
+  position: relative;
+  height: 40vh;
+  width: 40vh;
+  cursor: pointer;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.centric-card .mobile-hidden1,
+.centric-card .mobile-hidden2,
+.centric-card .mobile-hidden3 {
+  width: 45%;
+}
+
+@media (max-width: 768px) {
   .centric-card .mobile-hidden1,
   .centric-card .mobile-hidden2,
-  .centric-card .mobile-hidden3{
-    width: 45%;
+  .centric-card .mobile-hidden3 {
+    width: auto;
   }
-  
-  @media (max-width: 768px){
-    .centric-card .mobile-hidden1,
-    .centric-card .mobile-hidden2,
-    .centric-card .mobile-hidden3{
-      width: auto;
-    }
 }
-  
-  @media only screen and (max-width: 570px) {
-    .centric.ps {
-      padding-left: 25%;
-    }
-  
-    .centric .pe {
-      padding-right: 15%;
-    }
-  
-    .centric .sticky-text {
-      height: 375%;
-    }
-  
-    .centric h1 {
-      font-size: 1.3rem;
-      line-height: 0.8cm;
-    }
-  
-    .centric .sticky-text h1,
-    .light .sticky-text h1,
-    .technology .sticky-text h1 {
-      font-size: 1.3rem;
-      top: 12%;
-    }
 
-    .card img {
-      max-width: 100%;
-      height: auto;
-      scale: 0.2;
-      padding-left: 10%;
-      padding-right: 10%;
-    }
+@media only screen and (max-width: 570px) {
+  .centric.ps {
+    padding-left: 25%;
   }
+
+  .centric .pe {
+    padding-right: 15%;
+  }
+
+  .centric .sticky-text {
+    height: 375%;
+  }
+
+  .centric h1 {
+    font-size: 1.3rem;
+    line-height: 0.8cm;
+  }
+
+  .centric .sticky-text h1,
+  .light .sticky-text h1,
+  .technology .sticky-text h1 {
+    font-size: 1.3rem;
+    top: 12%;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    scale: 0.2;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 
 .card img {
   max-width: 100%;
@@ -374,25 +374,25 @@ html {
   width: 80%;
 }
 
-  .card .converse {
-    position: absolute;
-    z-index: 1;
-    top: 40px;
-    width: 80%;
-  }
-  
-  .card .celebrate {
-    position: absolute;
-    z-index: 1;
-    top: 40px;
-    width: 80%;
-  }
- 
-  .centric .conclusion{
-    font-size: 30px;
-    color: #8B9199;
-    padding-bottom: 100px;
-  }
+.card .converse {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .celebrate {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.centric .conclusion {
+  font-size: 30px;
+  color: #8b9199;
+  padding-bottom: 100px;
+}
 
 .centric i {
   color: #ff6d2f;
@@ -521,17 +521,16 @@ html {
   background-color: transparent;
 }
 
-.light-card .mobile-hidden{
+.light-card .mobile-hidden {
   width: 50%;
 }
 
-@media (max-width: 768px){
-  .light-card .mobile-hidden{
+@media (max-width: 768px) {
+  .light-card .mobile-hidden {
     padding-left: 0%;
     width: 100%;
   }
 }
-
 
 @media only screen and (max-width: 570px) {
   .light.ps {
@@ -552,17 +551,17 @@ html {
   }
 
   .light .light-card.ps {
-  padding-left: 25%;
-}
+    padding-left: 25%;
+  }
 
-.light .light-card .pe {
-  padding-right: 15%;
-}
+  .light .light-card .pe {
+    padding-right: 15%;
+  }
 
-.light .light-card .py {
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
+  .light .light-card .py {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 }
 
 .card img {
@@ -734,12 +733,12 @@ html {
   background-color: transparent;
 }
 
-.technology-card .mobile-hidden{
+.technology-card .mobile-hidden {
   width: 50%;
 }
 
-@media (max-width: 768px){
-  .technology-card .mobile-hidden{
+@media (max-width: 768px) {
+  .technology-card .mobile-hidden {
     padding-left: 0%;
     width: 100%;
   }
@@ -766,11 +765,11 @@ html {
   .technology-card.ps {
     padding-left: 20%;
   }
-  
+
   .technology-card.pe {
     padding-right: 15%;
   }
-  
+
   .technology-card.py {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -841,12 +840,28 @@ html {
 .text {
   font-size: 0.8rem;
 }
+.upper-contact p {
+  font-size: 1.2rem;
+}
+
+.start-form .sub-but input {
+  border-style: outset;
+  border-width: 2px;
+  border-color: #767676 #212121 #767676 #767676;
+  margin-right: 9.4rem;
+}
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
     font-size: 0.8rem;
   }
+  .start-form .sub-but input {
+    margin-right: 0rem;
+  }
   .upper-section-footer .upper-text h2 {
     font-size: 1.2rem;
+  }
+  .upper-contact p {
+    font-size: 0.8rem;
   }
   .text {
     font-size: 0.8rem;
@@ -863,14 +878,13 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px 100px 10px 100px;
+  padding: 3% 10% 3% 10%;
 }
 .lower-container .text-row .row ul {
   list-style: none;
 }
 
 .lower-container .text-row .row ul {
-  width: 120px;
   margin: auto;
   text-align: center;
   border: 1px solid black;
@@ -884,7 +898,7 @@ html {
   padding: 0px;
 }
 .lower-container .text-row .row ul li {
-  padding: 10px;
+  padding: 10px 0px;
   color: #8b9199;
 }
 .start-form input,
@@ -900,7 +914,7 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 30px;
+  margin: 0px;
 }
 .lower-container .image-row img {
   height: 34px;
@@ -924,8 +938,12 @@ html {
   .start-form input {
     width: 14rem;
   }
+  .start-form input {
+    width: 10rem;
+  }
+
   .start-form textarea {
     resize: none;
-    width: 79%;
+    width: 73%;
   }
 }
