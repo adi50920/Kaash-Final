@@ -12,7 +12,7 @@
 .cursor {
   pointer-events: none;
 }
-  
+
 .cursor__ball--big {
   position: absolute;
   top: 0;
@@ -28,12 +28,10 @@
   mix-blend-mode: difference;
   z-index: 1000;
 }
-    
-  circle {
-    fill: #f2f2f2;
-  }
-        
 
+circle {
+  fill: #f2f2f2;
+}
 
 /* header section */
 #header {
@@ -67,18 +65,18 @@
   }
 }
 
- /* The sidepanel menu */
- .sidepanel {
+/* The sidepanel menu */
+.sidepanel {
   height: 100vh; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; 
-  z-index: 1; 
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #F2F2F2; 
-  overflow-x: hidden; 
-  padding-top: 24px; 
-  transition: 0.5s; 
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  padding-top: 24px;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
 }
@@ -93,19 +91,19 @@
 .sidepanel a {
   text-decoration: none;
   font-size: 25px;
-  color: #2C2F32;
+  color: #2c2f32;
   display: block;
   transition: 0.3s;
 }
- 
+
 @media (max-width: 768px) {
-  .sidepanel a{
+  .sidepanel a {
     display: flex;
   }
 }
 
 @media (max-width: 768px) {
-  .sidepanel .hidden-mobile{
+  .sidepanel .hidden-mobile {
     display: none;
   }
 }
@@ -119,13 +117,13 @@
   margin-left: 50px;
 }
 
-.side h3{
-  color: #FF6D2F;
+.side h3 {
+  color: #ff6d2f;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.closebtn{
+.closebtn {
   border: none;
   padding: 0px 100px;
 }
@@ -136,13 +134,12 @@
   }
 }
 
-.side{
+.side {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 10%;
   padding-right: 10%;
 }
-
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -594,7 +591,7 @@
   font-size: 35px;
 }
 .project .sticky-text {
-  height: 570%;
+  height: 510%;
 }
 @media only screen and (max-width: 1000px) {
   .project .sticky-text {
@@ -754,12 +751,18 @@
 .text {
   font-size: 0.8rem;
 }
+.upper-contact p {
+  font-size: 1.2rem;
+}
 @media only screen and (max-width: 700px) {
   .upper-section-footer .text-start {
     font-size: 0.8rem;
   }
   .upper-section-footer .upper-text h2 {
     font-size: 1.2rem;
+  }
+  .upper-contact p {
+    font-size: 0.8rem;
   }
   .text {
     font-size: 0.8rem;
@@ -776,14 +779,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 100px 100px 10px 100px;
+  padding: 3% 10% 3% 10%;
 }
 .lower-container .text-row .row ul {
   list-style: none;
 }
 
 .lower-container .text-row .row ul {
-  width: 120px;
   margin: auto;
   text-align: center;
   border: 1px solid black;
@@ -797,12 +799,15 @@
   padding: 0px;
 }
 .lower-container .text-row .row ul li {
-  padding: 10px;
+  padding: 10px 0px;
   color: #8b9199;
 }
 .start-form input,
 .start-form textarea {
   background-color: #2c2f32;
+  outline: none;
+  color: white;
+  padding: 4px 10px;
 }
 
 .lower-container .image-row {
@@ -810,7 +815,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 30px;
+  margin: 0px;
 }
 .lower-container .image-row img {
   height: 34px;
@@ -834,6 +839,7 @@
   .start-form input {
     width: 14rem;
   }
+
   .start-form textarea {
     resize: none;
     width: 79%;
