@@ -241,15 +241,15 @@ html {
   padding-bottom: 10%;
 }
 
-.centric h1 {
-  font-size: 2rem;
-  line-height: 1.2cm;
-  font-weight: 300;
+.centric .text {
+  font-size: 20px;
   color: #2c2f32;
+  width: 45%;
+  font-weight: 300;
 }
 
-.centric h1 span {
-  color: #ff6d2d;
+.centric .orange-text1 {
+  color: #ff6d2f;
   font-weight: 600;
 }
 
@@ -340,9 +340,9 @@ html {
     height: 375%;
   }
 
-  .centric h1 {
-    font-size: 1.3rem;
-    line-height: 0.8cm;
+  .centric .text {
+    font-size: 0.8rem;
+    width: 80%;
   }
 
   .centric .sticky-text h1,
@@ -443,9 +443,11 @@ html {
   padding-bottom: 10%;
 }
 
-.light h1 {
-  font-size: 2rem;
-  line-height: 1.2cm;
+.light .text {
+  font-size: 20px;
+  color: #2c2f32;
+  width: 45%;
+  font-weight: 300;
 }
 
 .light h1 span {
@@ -504,6 +506,7 @@ html {
 .light-card ul {
   color: #8b9199;
   font-size: 1.2rem;
+  line-height: 1cm;
 }
 
 .light-card img {
@@ -545,9 +548,9 @@ html {
     height: 810%;
   }
 
-  .light h1 {
-    font-size: 1.3rem;
-    line-height: 0.8cm;
+  .light .text {
+    font-size: 0.8rem;
+    width: 80%;
   }
 
   .light .light-card.ps {
@@ -646,10 +649,18 @@ html {
   padding-bottom: 10%;
 }
 
-.technology h1 {
-  font-size: 2rem;
-  line-height: 1.2cm;
+.technology .text {
+  font-size: 20px;
+  color: #2c2f32;
+  width: 45%;
+  font-weight: 300;
 }
+
+.technology .orange-text1 {
+  color: #ff6d2f;
+  font-weight: 600;
+}
+
 
 .technology h1 span {
   color: #ff6d2d;
@@ -716,6 +727,7 @@ html {
 .technology-card ul {
   color: #8b9199;
   font-size: 1.2rem;
+  line-height: 1cm;
 }
 
 .technology-card img {
@@ -755,6 +767,11 @@ html {
 
   .technology .sticky-text {
     height: 390%;
+  }
+
+  .technology .text {
+    font-size: 0.8rem;
+    width: 80%;
   }
 
   .technology h1 {
