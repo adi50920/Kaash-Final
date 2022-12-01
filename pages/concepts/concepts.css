@@ -72,8 +72,8 @@ html {
   }
 }
 
- /* The sidepanel menu */
- .sidepanel {
+/* The sidepanel menu */
+.sidepanel {
   height: 100vh; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; 
@@ -94,19 +94,6 @@ html {
   max-height: 40px;
 }
 
-@media (max-width: 768px) {
-  .sidepanel a{
-    display: flex;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .sidepanel .hidden-mobile{
-    display: none;
-  }
-}
-
 /* The sidepanel links */
 .sidepanel a {
   text-decoration: none;
@@ -123,6 +110,18 @@ html {
   right: 25px;
   font-size: 50px;
   margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .sidepanel a{
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidepanel .hidden-mobile{
+    display: none;
+  }
 }
 
 .side h3{
@@ -148,6 +147,7 @@ html {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 
 
 /* --------INTRO-------- 

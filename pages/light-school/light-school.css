@@ -94,18 +94,6 @@ html {
   max-height: 40px;
 }
 
-@media (max-width: 768px) {
-  .sidepanel a{
-    display: flex;
-  }
-}
-
-@media (max-width: 768px) {
-  .sidepanel .hidden-mobile{
-    display: none;
-  }
-}
-
 /* The sidepanel links */
 .sidepanel a {
   text-decoration: none;
@@ -122,6 +110,18 @@ html {
   right: 25px;
   font-size: 50px;
   margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .sidepanel a{
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidepanel .hidden-mobile{
+    display: none;
+  }
 }
 
 .side h3{
