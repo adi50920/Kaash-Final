@@ -12,7 +12,7 @@
 .cursor {
   pointer-events: none;
 }
-  
+
 .cursor__ball--big {
   position: absolute;
   top: 0;
@@ -28,10 +28,10 @@
   mix-blend-mode: difference;
   z-index: 1000;
 }
-    
-  circle {
-    fill: #f2f2f2;
-  }
+
+circle {
+  fill: #f2f2f2;
+}
 
 /* header section */
 #header {
@@ -65,18 +65,18 @@
   }
 }
 
- /* The sidepanel menu */
- .sidepanel {
+/* The sidepanel menu */
+.sidepanel {
   height: 100vh; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; 
-  z-index: 1; 
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #F2F2F2; 
-  overflow-x: hidden; 
-  padding-top: 24px; 
-  transition: 0.5s; 
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  padding-top: 24px;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
 }
@@ -91,20 +91,19 @@
 .sidepanel a {
   text-decoration: none;
   font-size: 25px;
-  color: #2C2F32;
+  color: #2c2f32;
   display: block;
-  transition:   0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
-  .sidepanel a{
+  .sidepanel a {
     display: flex;
   }
 }
 
-
 @media (max-width: 768px) {
-  .sidepanel .hidden-mobile{
+  .sidepanel .hidden-mobile {
     display: none;
   }
 }
@@ -118,13 +117,13 @@
   margin-left: 50px;
 }
 
-.side h3{
-  color: #FF6D2F;
+.side h3 {
+  color: #ff6d2f;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.closebtn{
+.closebtn {
   border: none;
   padding: 0px 100px;
 }
@@ -135,13 +134,12 @@
   }
 }
 
-.side{
+.side {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 10%;
   padding-right: 10%;
 }
-
 
 /* top section  */
 
@@ -248,7 +246,7 @@
 }
 
 .projects .sticky-text {
-  height: 740%;
+  height: 700%;
 }
 
 .projects.ps {
@@ -293,7 +291,7 @@
 
 @media only screen and (max-width: 1000px) {
   .projects .sticky-text {
-    height: 450%;
+    height: 410%;
   }
   .projects .text {
     font-size: 0.8rem;
@@ -478,6 +476,9 @@
 .start-form input,
 .start-form textarea {
   background-color: #2c2f32;
+  outline: none;
+  color: white;
+  padding: 4px 10px;
 }
 
 .lower-container .image-row {
@@ -514,4 +515,3 @@
     width: 79%;
   }
 }
-
