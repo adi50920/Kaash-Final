@@ -777,6 +777,9 @@ circle {
   .text {
     font-size: 0.8rem;
   }
+  .lower-container .text-row .row ul li {
+    font-size: 0.6rem;
+  }
 }
 /* lower-footer */
 
@@ -858,4 +861,3 @@ circle {
     width: 73%;
   }
 }
-
